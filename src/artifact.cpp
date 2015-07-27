@@ -472,11 +472,11 @@ void init_artifacts()
     artifact_weapon_datum tmp_artifact_weapon_data[NUM_ARTWEAPS] = {
         {"", 0, 0, 0, 0, 0, 0, 0, 0, ""},
         // Adjective     Vol,wgt   Bash       Cut     To-Hit   tags
-        {_("Heavy"),     0, 1400,  10, 20,    0,  0,   -2,  0,  ""},
-        {_("Knobbed"),   1, 250,   14, 30,    0,  0,   -1,  1,  ""},
-        {_("Spiked"),    1, 100,    0,  0,   20, 40,   -1,  1,  "SPEAR"},
-        {_("Edged"),     2, 450,    0,  0,   20, 50,   -1,  2,  "CHOP"},
-        {_("Bladed"),    1, 2250,   0,  0,   12, 30,   -1,  1,  "STAB"}
+        {_("Heavy"),     0, 1400,  20, 40,    0,  0,   -2,  0,  ""},
+        {_("Knobbed"),   1, 250,   28, 60,    0,  0,   -1,  1,  ""},
+        {_("Spiked"),    1, 100,    0,  0,   40, 80,   -1,  1,  "SPEAR"},
+        {_("Edged"),     2, 450,    0,  0,   40, 100,   -1,  2,  "CHOP"},
+        {_("Bladed"),    1, 2250,   0,  0,   24, 60,   -1,  1,  "STAB"}
     };
     for(int i = 0; i < NUM_ARTWEAPS; i++) {
         artifact_weapon_data[i] = tmp_artifact_weapon_data[i];
@@ -546,7 +546,7 @@ void init_artifacts()
         },
 
         {
-            _("Ring"), c_ltgreen, "silver",   0,  4,  0,  0,  0,  0,  0,  0,  0,  0,  0,
+            _("Ring"), c_ltgreen, "steel",   0,  4,  0,  0,  0,  0,  0,  0,  0,  0,  0,
             0, true,
             {ARMORMOD_NULL, ARMORMOD_NULL, ARMORMOD_NULL, ARMORMOD_NULL, ARMORMOD_NULL}
         }
@@ -707,7 +707,7 @@ std::string new_artifact()
 
         // Wielded effects first
         while (!good_effects.empty() && !bad_effects.empty() &&
-               num_good < 3 && num_bad < 3 &&
+               num_good < 5 && num_bad < 5 &&
                (num_good < 1 || num_bad < 1 || one_in(num_good + 1) ||
                 one_in(num_bad + 1) || value > 1)) {
             if (value < 1 && one_in(2)) { // Good
@@ -716,9 +716,9 @@ std::string new_artifact()
                 good_effects.erase(good_effects.begin() + index);
                 num_good++;
             } else if (!bad_effects.empty()) { // Bad effect
-                int index = rng(0, bad_effects.size() - 1);
-                passive_tmp = bad_effects[index];
-                bad_effects.erase(bad_effects.begin() + index);
+                //int index = rng(0, bad_effects.size() - 1);
+                //passive_tmp = bad_effects[index];
+                //bad_effects.erase(bad_effects.begin() + index);
                 num_bad++;
             }
             value += passive_effect_cost[passive_tmp];
@@ -731,7 +731,7 @@ std::string new_artifact()
         good_effects = fill_good_passive();
         bad_effects = fill_bad_passive();
         while (one_in(2) && !good_effects.empty() && !bad_effects.empty() &&
-               num_good < 3 && num_bad < 3 &&
+               num_good < 5 && num_bad < 5 &&
                ((num_good > 2 && one_in(num_good + 1)) || num_bad < 1 ||
                 one_in(num_bad + 1) || value > 1)) {
             if (value < 1 && one_in(3)) { // Good
@@ -740,9 +740,9 @@ std::string new_artifact()
                 good_effects.erase(good_effects.begin() + index);
                 num_good++;
             } else { // Bad effect
-                int index = rng(0, bad_effects.size() - 1);
-                passive_tmp = bad_effects[index];
-                bad_effects.erase(bad_effects.begin() + index);
+                //int index = rng(0, bad_effects.size() - 1);
+                //passive_tmp = bad_effects[index];
+                //bad_effects.erase(bad_effects.begin() + index);
                 num_bad++;
             }
             value += passive_effect_cost[passive_tmp];
@@ -757,7 +757,7 @@ std::string new_artifact()
         std::vector<art_effect_active> good_a_effects = fill_good_active();
         std::vector<art_effect_active> bad_a_effects = fill_bad_active();
         while (!good_a_effects.empty() && !bad_a_effects.empty() &&
-               num_good < 3 && num_bad < 3 &&
+               num_good < 5 && num_bad < 5 &&
                (value > 3 || (num_bad > 0 && num_good == 0) ||
                 !one_in(3 - num_good) || !one_in(3 - num_bad))) {
             if (!one_in(3) && value <= 1) { // Good effect
@@ -767,21 +767,21 @@ std::string new_artifact()
                 num_good++;
                 value += active_effect_cost[active_tmp];
             } else { // Bad effect
-                int index = rng(0, bad_a_effects.size() - 1);
-                active_tmp = bad_a_effects[index];
-                bad_a_effects.erase(bad_a_effects.begin() + index);
+                //int index = rng(0, bad_a_effects.size() - 1);
+                //active_tmp = bad_a_effects[index];
+                //bad_a_effects.erase(bad_a_effects.begin() + index);
                 num_bad++;
                 value += active_effect_cost[active_tmp];
             }
             art->effects_activated.push_back(active_tmp);
-            art->max_charges += rng(1, 3);
+            art->max_charges += rng(1, 5);
         }
         art->def_charges = art->max_charges;
         // If we have charges, pick a recharge mechanism
         if (art->max_charges > 0) {
             art->charge_type = art_charge( rng(ARTC_NULL + 1, NUM_ARTCS - 1) );
         }
-        if (one_in(8) && num_bad + num_good >= 4) {
+        if (one_in(100) && num_bad + num_good >= 4) {
             art->charge_type = ARTC_NULL;    // 1 in 8 chance that it can't recharge!
         }
         item_controller->add_item_type( art );
@@ -875,18 +875,18 @@ std::string new_artifact()
         std::vector<art_effect_passive> bad_effects = fill_bad_passive();
 
         while (!good_effects.empty() && !bad_effects.empty() &&
-               num_good < 3 && num_bad < 3 &&
+               num_good < 5 && num_bad < 5 &&
                (num_good < 1 || one_in(num_good * 2) || value > 1 ||
-                (num_bad < 3 && !one_in(3 - num_bad)))) {
+                (num_bad < 5 && !one_in(3 - num_bad)))) {
             if (value < 1 && one_in(2)) { // Good effect
                 int index = rng(0, good_effects.size() - 1);
                 passive_tmp = good_effects[index];
                 good_effects.erase(good_effects.begin() + index);
                 num_good++;
             } else { // Bad effect
-                int index = rng(0, bad_effects.size() - 1);
-                passive_tmp = bad_effects[index];
-                bad_effects.erase(bad_effects.begin() + index);
+                //int index = rng(0, bad_effects.size() - 1);
+                //passive_tmp = bad_effects[index];
+                //bad_effects.erase(bad_effects.begin() + index);
                 num_bad++;
             }
             value += passive_effect_cost[passive_tmp];
@@ -931,14 +931,14 @@ std::string new_natural_artifact(artifact_natural_property prop)
     switch (rng(1, 3)) {
     case 1:
         good_passive = true;
-        bad_passive  = true;
+        bad_passive  = false;
         break;
     case 2:
         good_active = true;
-        bad_active  = true;
+        bad_active  = false;
         break;
     case 3:
-        bad_passive = true;
+        bad_passive = false;
         good_active = true;
         break;
     }
@@ -995,7 +995,7 @@ std::string new_natural_artifact(artifact_natural_property prop)
     // Natural artifacts ALWAYS can recharge
     // (When "implanting" them in a mundane item, this ability may be lost
     if (!art->effects_activated.empty()) {
-        art->max_charges = rng(1, 4);
+        art->max_charges = rng(1, 10);
         art->def_charges = art->max_charges;
         art->charge_type = art_charge( rng(ARTC_NULL + 1, NUM_ARTCS - 1) );
     }

@@ -15,20 +15,6 @@ class player;
 class Creature;
 struct sound_effect;
 
-struct sound_effect {
-    std::vector<std::string> files;
-    std::string id;
-    std::string variant;
-    int volume;
-    Mix_Chunk *chunk;
-
-    sound_effect() {
-        id = "";
-        variant = "";
-        volume = 0;
-    }
-};
-
 namespace sounds {
     // Methods for recording sound events.
     /**
@@ -66,36 +52,6 @@ namespace sounds {
     void draw_monster_sounds( const tripoint &offset, WINDOW *window );
     // retrieve the sound event(s?) at a location.
     std::string sound_at( const tripoint &location );
-}
-
-typedef std::string mat_type;
-typedef std::string ter_type;
-
-namespace sfx {
-    void load_sound_effects( JsonObject &jsobj );
-    void play_variant_sound( std::string id, std::string variant, int volume, int angle = 0, float pitch_mix = 1.0, float pitch_max = 1.0 );
-    void play_ambient_variant_sound( std::string id, std::string variant, int volume, int channel,
-                                     int duration );
-    void generate_gun_soundfx( const tripoint source );
-    void generate_melee_soundfx( const tripoint source, const tripoint target, bool hit, bool targ_mon = 0, std::string material = "flesh" );
-    void *generate_melee_soundfx_thread( void * argument );
-    void do_hearing_loss_sfx( int turns );
-    void remove_hearing_loss_sfx();
-    void do_projectile_hit_sfx( const Creature *target = nullptr );
-    int get_heard_volume( const tripoint source );
-    void do_footstep_sfx();
-    void do_danger_music();
-    void do_ambient_sfx();
-    void set_group_channels( int from, int to, int tag );
-    void fade_audio_group( int tag, int duration );
-    void fade_audio_channel( int tag, int duration );
-    int is_channel_playing( int channel );
-    void stop_sound_effect_fade( int channel, int duration );
-    void do_player_death_hurt_sfx( bool gender, bool death );
-    void do_fatigue_sfx();
-    int get_heard_angle( const tripoint source );
-    int get_channel( Mix_Chunk * effect_to_play );
-    void do_obstacle_sfx();
 }
 
 #endif

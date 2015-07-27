@@ -13,6 +13,7 @@
 #include "npc.h"
 #include "itype.h"
 #include "line.h"
+#include "sfx.h"
 
 #include <sstream>
 #include <stdlib.h>
@@ -345,7 +346,7 @@ void player::melee_attack(Creature &t, bool allow_special, const matec_id &force
 
         // Make a rather quiet sound, to alert any nearby monsters
         if (!is_quiet()) { // check martial arts silence
-            sounds::sound( pos3(), 8, "", false, "", "" );
+            sounds::sound( pos3(), 8, "", false, "melee_hit", weapon.typeId() );
         }
         std::string material = "flesh";
         bool targ_mon = (!t.is_npc() && !t.is_player());
@@ -356,6 +357,7 @@ void player::melee_attack(Creature &t, bool allow_special, const matec_id &force
             }
         }
         sfx::generate_melee_soundfx( pos3(), t.pos3(), 1, targ_mon, material);
+
         int dam = dealt_dam.total_damage();
 
         bool bashing = (d.type_damage(DT_BASH) >= 10 && !unarmed_attack());
@@ -845,7 +847,6 @@ void player::roll_stab_damage( bool crit, damage_instance &di )
 
     int unarmed_skill = get_skill_level("unarmed");
     int stabbing_skill = get_skill_level("stabbing");
-    float stab_mul = 0.0f;
 
     if (has_active_bionic("bio_cqb")) {
         stabbing_skill = 5;
@@ -890,11 +891,12 @@ void player::roll_stab_damage( bool crit, damage_instance &di )
         return; // No negative stabbing!
     }
 
+    float stab_mul = 1.0f;
     // 66%, 76%, 86%, 96%, 106%, 116%, 122%, 128%, 134%, 140%
     if( stabbing_skill <= 5 ) {
-        stab_mul *= 0.66 + 0.1 * stabbing_skill;
+        stab_mul = 0.66 + 0.1 * stabbing_skill;
     } else {
-        stab_mul *= 0.86 + 0.06 * stabbing_skill;
+        stab_mul = 0.86 + 0.06 * stabbing_skill;
     }
 
     stab_mul *= mabuff_cut_mult();

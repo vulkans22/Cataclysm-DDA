@@ -873,8 +873,6 @@ public:
         /**
          * Returns the encumbrance value that this item has when worn.
          * Returns 0 if this is can not be worn at all.
-         * Note that this does not include any bonus from the FIT tag or similar, only
-         * @ref islot_armor::encumber.
          */
         int get_encumber() const;
         /**
@@ -1216,6 +1214,7 @@ public:
 
  int quiver_store_arrow(item &arrow);
  int max_charges_from_flag(std::string flagName);
+ int get_gun_ups_drain() const; 
 };
 
 bool item_compare_by_charges( const item& left, const item& right);

@@ -529,13 +529,13 @@ int Creature::deal_projectile_attack(Creature *source, double missed_by,
         message = _("Headshot!");
         source->add_msg_if_player(m_good, message.c_str());
         gmtSCTcolor = m_headshot;
-        damage_mult *= rng_float(2.45, 3.35);
+        damage_mult *= rng_float(6.45, 8.35);
         bp_hit = bp_head; // headshot hits the head, of course
     } else if (goodhit <= .2) {
         message = _("Critical!");
         source->add_msg_if_player(m_good, message.c_str());
         gmtSCTcolor = m_critical;
-        damage_mult *= rng_float(1.75, 2.3);
+        damage_mult *= rng_float(4.3, 5.85);
     } else if (goodhit <= .4) {
         message = _("Good hit!");
         source->add_msg_if_player(m_good, message.c_str());

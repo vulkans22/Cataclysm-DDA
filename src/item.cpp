@@ -94,6 +94,19 @@ item::item(const std::string new_type, unsigned int turn, bool rand, const hande
     // TODO: some item types use the same member (e.g. charges) for different things. Handle or forbid this.
     if( type->gun ) {
         charges = 0;
+        for( auto &gm : type->gun->built_in_mods ){
+            if(type_is_defined( gm) ){
+                item temp( gm, turn, rand, handed );
+                temp.item_tags.insert("IRREMOVABLE");
+                contents.push_back( temp );
+            }
+        }
+
+        for( auto &gm : type->gun->default_mods ){
+            if(type_is_defined( gm ) ){
+                contents.push_back( item( gm, turn, rand, handed ) );
+            }
+        } 
     }
     if( type->ammo ) {
         charges = type->ammo->def_charges;
@@ -758,6 +771,9 @@ std::string item::info(bool showtext, std::vector<iteminfo> &dump_ref) const
                 dump->push_back(iteminfo("GUN", _("Semi-automatic.")));
             }
         } else {
+            if (has_flag("BURST_ONLY")) {
+                dump->push_back(iteminfo("GUN", _("Fully-automatic (burst only).")));
+            }
             dump->push_back(iteminfo("GUN", _("Burst size: "), "", mod->burst_size()));
         }
 
@@ -942,7 +958,7 @@ std::string item::info(bool showtext, std::vector<iteminfo> &dump_ref) const
         dump->push_back(iteminfo("ARMOR", _("Warmth: "), "", get_warmth()));
         if (has_flag("FIT")) {
             dump->push_back(iteminfo("ARMOR", _("Encumberment: "), _("<num> (fits)"),
-                                     std::max(0, get_encumber() - 10), true, "", true, true));
+                                     get_encumber(), true, "", true, true));
         } else {
             dump->push_back(iteminfo("ARMOR", _("Encumberment: "), "",
                                      get_encumber(), true, "", true, true));
@@ -1182,13 +1198,8 @@ std::string item::info(bool showtext, std::vector<iteminfo> &dump_ref) const
 
         //See shorten version of this in armor_layers.cpp::clothing_flags_description
         if (is_armor() && has_flag("FIT")) {
-            if( get_encumber() > 0 ) {
-                dump->push_back(iteminfo("DESCRIPTION", "--"));
-                dump->push_back(iteminfo("DESCRIPTION", _("This piece of clothing fits you perfectly.")));
-            } else {
-                dump->push_back(iteminfo("DESCRIPTION", "--"));
-                dump->push_back(iteminfo("DESCRIPTION", _("This piece of clothing fits you perfectly and layers easily.")));
-            }
+	    dump->push_back(iteminfo("DESCRIPTION", "--"));
+	    dump->push_back(iteminfo("DESCRIPTION", _("This piece of clothing fits you perfectly.")));
         } else if (is_armor() && has_flag("VARSIZE")) {
             dump->push_back(iteminfo("DESCRIPTION", "--"));
             dump->push_back(iteminfo("DESCRIPTION", _("This piece of clothing can be refitted.")));
@@ -1493,6 +1504,9 @@ std::string item::info(bool showtext, std::vector<iteminfo> &dump_ref) const
                 for( auto &elem : contents ) {
                     const auto mod = elem.type->gunmod.get();
                     temp1.str("");
+                    if( elem.has_flag("IRREMOVABLE") ){
+                        temp1 << _("[Integrated]");
+                    }
                     temp1 << " " << elem.tname() << " (" << _( mod->location.c_str() ) << ")";
                     dump->push_back(iteminfo("DESCRIPTION", temp1.str()));
                     dump->push_back( iteminfo( "DESCRIPTION", elem.type->description ) );
@@ -1805,7 +1819,9 @@ std::string item::tname( unsigned int quantity, bool with_prefix ) const
         ret.str("");
         ret << type_name(quantity);
         for( size_t i = 0; i < contents.size(); ++i ) {
-            ret << "+";
+            if( !contents.at(i).has_flag("IRREMOVABLE") ){
+                ret << "+";
+            }
         }
         maintext = ret.str();
     } else if( is_armor() && item_tags.count("wooled") + item_tags.count("furred") +
@@ -2422,6 +2438,10 @@ int item::get_encumber() const
     // it_armor::encumber is signed char
     int encumber = static_cast<int>( t->encumber );
 
+    // Fit checked before changes, fitting shouldn't reduce penalties from patching.
+    if( item::item_tags.count("FIT") ) {
+        encumber = std::max( encumber / 2, encumber - 10 );
+    }
     // Good items to test this stuff on:
     // Hoodies (3 thickness), jumpsuits (2 thickness, 3 encumbrance),
     // Nomes socks (2 thickness, 0 encumbrance)
@@ -3204,7 +3224,9 @@ void item::set_auxiliary_mode()
 
 std::string item::get_gun_mode() const
 {
-    return get_var( GUN_MODE_VAR_NAME, "NULL" );
+    // has_flag() calls get_gun_mode(), so this:
+    const std::string default_mode = type->item_tags.count( "BURST_ONLY" ) ? "MODE_BURST" : "NULL";
+    return get_var( GUN_MODE_VAR_NAME, default_mode );
 }
 
 void item::set_gun_mode( const std::string &mode )
@@ -3222,7 +3244,7 @@ void item::set_gun_mode( const std::string &mode )
 
 void item::next_mode()
 {
-    const auto mode = get_gun_mode();
+    auto mode = get_gun_mode();
     if( mode == "NULL" && has_flag("MODE_BURST") ) {
         set_gun_mode("MODE_BURST");
     } else if( mode == "NULL" || mode == "MODE_BURST" ) {
@@ -3264,6 +3286,11 @@ void item::next_mode()
         }
     } else if( mode == "MODE_REACH" ) {
         set_gun_mode( "NULL" );
+    }
+    // ensure MODE_BURST for BURST_ONLY weapons
+    mode = get_gun_mode();
+    if( mode == "NULL" && has_flag( "BURST_ONLY" ) ) {
+        set_gun_mode( "MODE_BURST" );
     }
 }
 
@@ -5113,7 +5140,19 @@ itype *item::find_type( const itype_id &type )
 {
     return item_controller->find_template( type );
 }
-
+int item::get_gun_ups_drain() const
+{
+    int draincount = 0;
+    if( type->gun.get() != nullptr ){
+        draincount += type->gun->ups_charges;
+        for( auto &mod : contents ){
+            if( mod.type->gunmod->ups_charges > 0 ){
+                draincount += mod.type->gunmod->ups_charges;
+            }
+        }
+    }
+    return draincount;
+}
 item_category::item_category() : id(), name(), sort_rank( 0 )
 {
 }

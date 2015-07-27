@@ -1,3590 +1,1580 @@
 [
     {
         "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "bio_laser_gun",
-        "files" : [
-            "guns/energy_generic/weapon_fire_laser.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "bio_blaster_gun",
-        "files" : [
-            "guns/energy_generic/weapon_fire_plasma.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "bio_lightning",
-        "files" : [
-            "guns/energy_generic/weapon_fire_lightning.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "nailgun",
-        "files" : [
-            "guns/misc_generic/weapon_fire_nail.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "nailgun",
-        "files" : [
-            "guns/misc_generic/weapon_reload_nail.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "nailrifle",
-        "files" : [
-            "guns/misc_generic/weapon_fire_nail.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "nailrifle",
-        "files" : [
-            "guns/misc_generic/weapon_reload_nail.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "bbgun",
-        "files" : [
-            "guns/misc_generic/weapon_fire_bb.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "bbgun",
-        "files" : [
-            "guns/misc_generic/weapon_reload_bb.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "variant" : "rifle_22",
-        "volume" : 90,
-        "files" : [
-            "guns/pistol_generic/weapon_fire_22cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "variant" : "rifle_22",
-        "volume" : 90,
-        "files" : [
-            "guns/boltrifle_generic/weapon_reload_single.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "rifle_9mm",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_9mm.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "rifle_9mm",
-        "files" : [
-            "guns/boltrifle_generic/weapon_reload_single.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "briefcase_smg",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_9mm.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "briefcase_smg",
-        "files" : [
-            "guns/smg_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "sig_mosquito",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_22cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "sig_mosquito",
-        "files" : [
-            "guns/pistol_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "sw_22",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_22cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "sw_22",
-        "files" : [
-            "guns/pistol_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "glock_19",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_9mm.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "glock_19",
-        "files" : [
-            "guns/pistol_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "usp_9mm",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_9mm.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "usp_9mm",
-        "files" : [
-            "guns/pistol_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "l_sp_9mm",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_9mm.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "l_sp_9mm",
-        "files" : [
-            "guns/pistol_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "l_mp_9mm",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_9mm.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "l_mp_9mm",
-        "files" : [
-            "guns/pistol_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "l_lookout_9mm",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_9mm.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "l_lookout_9mm",
-        "files" : [
-            "guns/revolver_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "sw_619",
-        "files" : [
-            "guns/revolver_generic/weapon_fire_38cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "sw_619",
-        "files" : [
-            "guns/revolver_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "taurus_38",
-        "files" : [
-            "guns/revolver_generic/weapon_fire_38cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "taurus_38",
-        "files" : [
-            "guns/pistol_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "sig_40",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_40cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "sig_40",
-        "files" : [
-            "guns/pistol_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "glock_22",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_40cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "glock_22",
-        "files" : [
-            "guns/pistol_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "sw_610",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_40cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "sw_610",
-        "files" : [
-            "guns/revolver_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "surv_six_shooter",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_40cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "surv_six_shooter",
-        "files" : [
-            "guns/revolver_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "sw_500",
-        "files" : [
-            "guns/revolver_generic/weapon_fire_500cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "sw_500",
-        "files" : [
-            "guns/revolver_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "raging_bull",
-        "files" : [
-            "guns/revolver_generic/weapon_fire_454cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "raging_bull",
-        "files" : [
-            "guns/revolver_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "ruger_redhawk",
-        "files" : [
-            "guns/revolver_generic/weapon_fire_44mag.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "ruger_redhawk",
-        "files" : [
-            "guns/revolver_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "sw629",
-        "files" : [
-            "guns/revolver_generic/weapon_fire_44mag.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "sw629",
-        "files" : [
-            "guns/revolver_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "deagle_44",
-        "files" : [
-            "guns/revolver_generic/weapon_fire_44mag.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "deagle_44",
-        "files" : [
-            "guns/pistol_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "usp_45",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_45cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "usp_45",
-        "files" : [
-            "guns/pistol_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "surv_hand_cannon",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_45cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "surv_hand_cannon",
-        "files" : [
-            "guns/revolver_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "m1911",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_45cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "m1911",
-        "files" : [
-            "guns/pistol_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "l_sp_45",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_45cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "l_sp_45",
-        "files" : [
-            "guns/pistol_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "l_mp_45",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_45cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "l_mp_45",
-        "files" : [
-            "guns/pistol_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "l_enforcer_45",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_45cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "l_enforcer_45",
-        "files" : [
-            "guns/revolver_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "l_back_223",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_fire_556.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "l_back_223",
-        "files" : [
-            "guns/revolver_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "fn57",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_57mm.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "fn57",
-        "files" : [
-            "guns/pistol_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "hk_ucp",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_46mm.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "hk_ucp",
-        "files" : [
-            "guns/pistol_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "shotgun_sawn",
-        "files" : [
-            "guns/autoshotgun_generic/weapon_fire_00.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "shotgun_sawn",
-        "files" : [
-            "guns/pumpshotgun_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "saiga_sawn",
-        "files" : [
-            "guns/autoshotgun_generic/weapon_fire_00.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "saiga_sawn",
-        "files" : [
-            "guns/autoshotgun_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "shotgun_s",
-        "files" : [
-            "guns/autoshotgun_generic/weapon_fire_00.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "shotgun_s",
-        "files" : [
-            "guns/pumpshotgun_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "shotgun_d",
-        "files" : [
-            "guns/autoshotgun_generic/weapon_fire_00.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "shotgun_d",
-        "files" : [
-            "guns/pumpshotgun_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "remington_870",
-        "files" : [
-            "guns/pumpshotgun_generic/weapon_fire_00.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "remington_870",
-        "files" : [
-            "guns/pumpshotgun_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "mossberg_500",
-        "files" : [
-            "guns/pumpshotgun_generic/weapon_fire_00.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "mossberg_500",
-        "files" : [
-            "guns/pumpshotgun_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "m1014",
-        "files" : [
-            "guns/autoshotgun_generic/weapon_fire_00.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "m1014",
-        "files" : [
-            "guns/pumpshotgun_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "saiga_12",
-        "files" : [
-            "guns/autoshotgun_generic/weapon_fire_00.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "saiga_12",
-        "files" : [
-            "guns/autoshotgun_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "l_def_12",
-        "files" : [
-            "guns/pumpshotgun_generic/weapon_fire_00.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "l_def_12",
-        "files" : [
-            "guns/pumpshotgun_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "american_180",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_22cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "american_180",
-        "files" : [
-            "guns/smg_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "uzi",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_9mm.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "uzi",
+        "id" : "none",
+        "volume" : 95,
+        "variants" : [
+            "none"
+        ],
         "files" : [
-            "guns/smg_generic/weapon_reload.wav"
+            "misc/silence.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "tec9",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_9mm.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
         "volume" : 90,
-        "variant" : "tec9",
+        "variants" : [
+            "bio_lightning",
+            "unbio_chain_lightning"
+        ],
         "files" : [
-            "guns/smg_generic/weapon_reload.wav"
+            "guns/energy_generic/weapon_fire_lightning.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
         "volume" : 90,
-        "variant" : "calico",
+        "variants" : [
+            "nailgun",
+            "nailrifle"
+        ],
         "files" : [
-            "guns/pistol_generic/weapon_fire_9mm.wav"
+            "guns/misc_generic/weapon_fire_nail.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "reload",
         "volume" : 90,
-        "variant" : "calico",
+        "variants" : [
+            "nailgun",
+            "nailrifle",
+            "coilgun"
+        ],
         "files" : [
-            "guns/smg_generic/weapon_reload.wav"
+            "guns/misc_generic/weapon_reload_nail.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
         "volume" : 90,
-        "variant" : "hk_mp5",
+        "variants" : [
+            "bbgun"
+        ],
         "files" : [
-            "guns/pistol_generic/weapon_fire_9mm.wav"
+            "guns/misc_generic/weapon_fire_bb.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "reload",
         "volume" : 90,
-        "variant" : "hk_mp5",
+        "variants" : [
+            "bbgun"
+        ],
         "files" : [
-            "guns/smg_generic/weapon_reload_mp5_style.wav"
+            "guns/misc_generic/weapon_reload_bb.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
         "volume" : 90,
-        "variant" : "mac_10",
+        "variants" : [
+            "rifle_22",
+            "sig_mosquito",
+            "sw_22",
+            "american_180",
+            "marlin_9a",
+            "ruger_1022",
+            "rm360_carbine",
+            "moss_brownie"
+        ],
         "files" : [
-            "guns/pistol_generic/weapon_fire_45cal.wav"
+            "guns/pistol_generic/weapon_fire_22cal.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "reload",
         "volume" : 90,
-        "variant" : "mac_10",
+        "variants" : [
+            "rifle_22",
+            "rifle_9mm",
+            "marlin_9a",
+            "browning_blr",
+            "l_long_45",
+            "remington_700",
+            "survivor_special_700",
+            "rifle_308",
+            "surv_carbine_223",
+            "savage_111f",
+            "m2browning_sawn",
+            "win70",
+            "weatherby_5",
+            "mosin91_30",
+            "mosin44",
+            "mosin91_30_ebr",
+            "mosin44_ebr"
+        ],
         "files" : [
-            "guns/smg_generic/weapon_reload.wav"
+            "guns/boltrifle_generic/weapon_reload_single.ogg"
         ]
     },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "hk_ump45",
+    {
+        "type": "sound_effect",
+        "id" : "fire_gun",
+        "volume" : 90,
+        "variants" : [
+            "rifle_9mm",
+            "briefcase_smg",
+            "glock_19",
+            "usp_9mm",
+            "l_sp_9mm",
+            "l_mp_9mm",
+            "l_lookout_9mm",
+            "uzi",
+            "tec9",
+            "calico",
+            "hk_mp5",
+            "cx4",
+            "m9"
+        ],
         "files" : [
-            "guns/pistol_generic/weapon_fire_45cal.wav"
+            "guns/pistol_generic/weapon_fire_9mm.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "reload",
-        "volume" : 90,
-        "variant" : "hk_ump45",
-        "files" : [
-            "guns/smg_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
         "volume" : 90,
-        "variant" : "TDI",
+        "variants" : [
+            "briefcase_smg",
+            "american_180",
+            "uzi",
+            "tec9",
+            "calico",
+            "hk_mp5",
+            "mac_10",
+            "hk_ump45",
+            "TDI",
+            "fn_p90",
+            "hk_mp7",
+            "rm360_carbine",
+            "rm2000_smg",
+            "needlegun",
+            "ppsh"
+        ],
         "files" : [
-            "guns/pistol_generic/weapon_fire_45cal.wav"
+            "guns/smg_generic/weapon_reload.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "reload",
-        "volume" : 90,
-        "variant" : "TDI",
-        "files" : [
-            "guns/smg_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
         "volume" : 90,
-        "variant" : "fn_p90",
+        "variants" : [
+            "sig_mosquito",
+            "sw_22",
+            "glock_19",
+            "usp_9mm",
+            "l_sp_9mm",
+            "l_mp_9mm",
+            "taurus_38",
+            "sig_40",
+            "glock_22",
+            "deagle_44",
+            "usp_45",
+            "m1911",
+            "l_sp_45",
+            "l_mp_45",
+            "fn57",
+            "hk_ucp",
+            "m9",
+            "rm103a_pistol",
+            "needlepistol",
+            "tokarev",
+            "walther_ppk",
+            "sig_p230"
+        ],
         "files" : [
-            "guns/pistol_generic/weapon_fire_57mm.wav"
+            "guns/pistol_generic/weapon_reload.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "reload",
         "volume" : 90,
-        "variant" : "fn_p90",
+        "variants" : [
+            "l_lookout_9mm",
+            "sw_619",
+            "sw_610",
+            "surv_six_shooter",
+            "sw_500",
+            "raging_bull",
+            "ruger_redhawk",
+            "sw629",
+            "surv_hand_cannon",
+            "l_enforcer_45",
+            "l_back_223",
+            "rm99_pistol",
+            "moss_brownie",
+            "cop_38",
+            "2_shot_special",
+            "colt_navy",
+            "colt_army"
+        ],
         "files" : [
-            "guns/smg_generic/weapon_reload.wav"
+            "guns/revolver_generic/weapon_reload.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "hk_mp7",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_46mm.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
         "volume" : 90,
-        "variant" : "hk_mp7",
+        "variants" : [
+            "taurus_38",
+            "sw_619",
+            "cop_38",
+            "2_shot_special"
+        ],
         "files" : [
-            "guns/smg_generic/weapon_reload.wav"
+            "guns/revolver_generic/weapon_fire_38cal.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "marlin_9a",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_22cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
         "volume" : 90,
-        "variant" : "marlin_9a",
+        "variants" : [
+            "sig_40",
+            "glock_22",
+            "sw_610",
+            "surv_six_shooter"
+        ],
         "files" : [
-            "guns/boltrifle_generic/weapon_reload_single.wav"
+            "guns/pistol_generic/weapon_fire_40cal.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "ruger_1022",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_22cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
         "volume" : 90,
-        "variant" : "ruger_1022",
+        "variants" : [
+            "sw_500"
+        ],
         "files" : [
-            "guns/boltrifle_generic/weapon_reload_mag.wav"
+            "guns/revolver_generic/weapon_fire_500cal.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "cx4",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_9mm.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
         "volume" : 90,
-        "variant" : "cx4",
+        "variants" : [
+            "raging_bull"
+        ],
         "files" : [
-            "guns/boltrifle_generic/weapon_reload_mag.wav"
+            "guns/revolver_generic/weapon_fire_454cal.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
         "volume" : 90,
-        "variant" : "browning_blr",
+        "variants" : [
+            "ruger_redhawk",
+            "sw629",
+            "deagle_44"
+        ],
         "files" : [
-            "guns/boltrifle_generic/weapon_fire_762x51.wav"
+            "guns/revolver_generic/weapon_fire_44mag.ogg"
         ]
     },
     {
         "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "browning_blr",
-        "files" : [
-            "guns/boltrifle_generic/weapon_reload_single.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
         "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "l_long_45",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_45cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
         "volume" : 90,
-        "variant" : "l_long_45",
+        "variants" : [
+            "usp_45",
+            "surv_hand_cannon",
+            "m1911",
+            "l_sp_45",
+            "l_mp_45",
+            "l_enforcer_45",
+            "mac_10",
+            "hk_ump45",
+            "TDI",
+            "l_long_45"
+        ],
         "files" : [
-            "guns/boltrifle_generic/weapon_reload_single.wav"
+            "guns/pistol_generic/weapon_fire_45cal.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "remington_700",
-        "files" : [
-            "guns/boltrifle_generic/weapon_fire_3006.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
         "volume" : 90,
-        "variant" : "remington_700",
+        "variants" : [
+            "l_back_223",
+            "ruger_mini",
+            "surv_carbine_223",
+            "hk_g36",
+            "l_base_223",
+            "l_car_223",
+            "acr",
+            "ar15",
+            "m4a1",
+            "l_mbr_223",
+            "scar_l",
+            "h&k416a5",
+            "l_dsr_223",
+            "m27iar",
+            "l_lmg_223",
+            "steyr_aug",
+            "m249"
+        ],
         "files" : [
-            "guns/boltrifle_generic/weapon_reload_single.wav"
+            "guns/assaultrifle_generic/weapon_fire_556.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "survivor_special_700",
-        "files" : [
-            "guns/boltrifle_generic/weapon_fire_3006.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
         "volume" : 90,
-        "variant" : "survivor_special_700",
+        "variants" : [
+            "fn57",
+            "fn_p90"
+        ],
         "files" : [
-            "guns/boltrifle_generic/weapon_reload_single.wav"
+            "guns/pistol_generic/weapon_fire_57mm.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "m14a",
-        "files" : [
-            "guns/boltrifle_generic/weapon_fire_762x51.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
         "volume" : 90,
-        "variant" : "m14a",
+        "variants" : [
+            "hk_ucp",
+            "hk_mp7"
+        ],
         "files" : [
-            "guns/semiautorifle_generic/weapon_reload.wav"
+            "guns/pistol_generic/weapon_fire_46mm.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
         "volume" : 90,
-        "variant" : "ruger_mini",
+        "variants" : [
+            "shotgun_sawn",
+            "saiga_sawn",
+            "shotgun_s",
+            "shotgun_d",
+            "m1014",
+            "saiga_12",
+            "pipe_shotgun",
+            "pipe_double_shotgun",
+            "pipe_shotgunsawn",
+            "ashot"
+        ],
         "files" : [
-            "guns/assaultrifle_generic/weapon_fire_556.wav"
+            "guns/autoshotgun_generic/weapon_fire_00.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "reload",
-        "volume" : 90,
-        "variant" : "ruger_mini",
-        "files" : [
-            "guns/semiautorifle_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
         "volume" : 90,
-        "variant" : "rifle_308",
+        "variants" : [
+            "shotgun_sawn",
+            "shotgun_s",
+            "shotgun_d",
+            "remington_870",
+            "mossberg_500",
+            "m1014",
+            "l_def_12",
+            "revolver_shotgun",
+            "pipe_shotgun",
+            "pipe_double_shotgun",
+            "pipe_shotgunsawn",
+            "bigun",
+            "ashot",
+            "rm120c",
+            "rm228"
+        ],
         "files" : [
-            "guns/boltrifle_generic/weapon_fire_762x51.wav"
+            "guns/pumpshotgun_generic/weapon_reload.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "reload",
         "volume" : 90,
-        "variant" : "rifle_308",
+        "variants" : [
+            "saiga_sawn",
+            "saiga_12",
+            "rm20"
+        ],
         "files" : [
-            "guns/boltrifle_generic/weapon_reload_single.wav"
+            "guns/autoshotgun_generic/weapon_reload.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
         "volume" : 90,
-        "variant" : "surv_carbine_223",
+        "variants" : [
+            "remington_870",
+            "mossberg_500",
+            "l_def_12",
+            "revolver_shotgun",
+            "bigun"
+        ],
         "files" : [
-            "guns/assaultrifle_generic/weapon_fire_556.wav"
+            "guns/pumpshotgun_generic/weapon_fire_00.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "reload",
         "volume" : 90,
-        "variant" : "surv_carbine_223",
+        "variants" : [
+            "ruger_1022",
+            "cx4",
+            "m2010",
+            "m107a1"
+        ],
         "files" : [
-            "guns/boltrifle_generic/weapon_reload_single.wav"
+            "guns/boltrifle_generic/weapon_reload_mag.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "savage_111f",
-        "files" : [
-            "guns/boltrifle_generic/weapon_fire_762x51.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
         "volume" : 90,
-        "variant" : "savage_111f",
+        "variants" : [
+            "browning_blr",
+            "m14a",
+            "rifle_308",
+            "savage_111f"
+        ],
         "files" : [
-            "guns/boltrifle_generic/weapon_reload_single.wav"
+            "guns/boltrifle_generic/weapon_fire_762x51.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
         "volume" : 90,
-        "variant" : "hk_g3",
+        "variants" : [
+            "remington_700",
+            "survivor_special_700"
+        ],
         "files" : [
-            "guns/assaultrifle_generic/weapon_fire_762x51.wav"
+            "guns/boltrifle_generic/weapon_fire_3006.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "reload",
         "volume" : 90,
-        "variant" : "hk_g3",
+        "variants" : [
+            "m14a",
+            "ruger_mini",
+            "sks",
+            "m14ebr",
+            "rm11b_sniper_rifle"
+        ],
         "files" : [
-            "guns/assaultrifle_generic/weapon_reload.wav"
+            "guns/semiautorifle_generic/weapon_reload.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
         "volume" : 90,
-        "variant" : "hk_g36",
+        "variants" : [
+            "hk_g3",
+            "fn_fal",
+            "scar_h",
+            "m14ebr",
+            "arx160"
+        ],
         "files" : [
-            "guns/assaultrifle_generic/weapon_fire_556.wav"
+            "guns/assaultrifle_generic/weapon_fire_762x51.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "reload",
         "volume" : 90,
-        "variant" : "hk_g36",
+        "variants" : [
+            "hk_g3",
+            "hk_g36",
+            "ak47",
+            "fn_fal",
+            "l_base_223",
+            "l_car_223",
+            "acr",
+            "ar15",
+            "m4a1",
+            "l_mbr_223",
+            "scar_l",
+            "scar_h",
+            "h&k416a5",
+            "l_dsr_223",
+            "m27iar",
+            "l_lmg_223",
+            "steyr_aug",
+            "m249",
+            "rm51_assault_rifle",
+            "rm88_battle_rifle",
+            "rm614_lmg",
+            "m2browning",
+            "mark19",
+            "arx160",
+            "rm298"
+        ],
         "files" : [
-            "guns/assaultrifle_generic/weapon_reload.wav"
+            "guns/assaultrifle_generic/weapon_reload.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
         "volume" : 70,
-        "variant" : "ak47",
+        "variants" : [
+            "ak47",
+            "sks"
+        ],
         "files" : [
-            "guns/assaultrifle_generic/weapon_fire_762x39.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 70,
-        "variant" : "ak47",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_reload_ak.wav"
+            "guns/assaultrifle_generic/weapon_fire_762x39.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
         "volume" : 90,
-        "variant" : "sks",
+        "variants" : [
+            "m2010",
+            "win70",
+            "weatherby_5"
+        ],
         "files" : [
-            "guns/assaultrifle_generic/weapon_fire_762x39.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "sks",
-        "files" : [
-            "guns/semiautorifle_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "fn_fal",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_fire_762x51.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "fn_fal",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "l_base_223",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_fire_556.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "l_base_223",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "l_car_223",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_fire_556.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "l_car_223",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "acr",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_fire_556.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "acr",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "ar15",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_fire_556.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "ar15",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "m4a1",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_fire_556.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "m4a1",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "l_mbr_223",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_fire_556.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "l_mbr_223",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "scar_l",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_fire_556.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "scar_l",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "scar_h",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_fire_762x51.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "scar_h",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "m2010",
-        "files" : [
-            "guns/boltrifle_generic/weapon_fire_300winmag.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "m2010",
-        "files" : [
-            "guns/boltrifle_generic/weapon_reload_mag.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "m14ebr",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_fire_762x51.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "m14ebr",
-        "files" : [
-            "guns/semiautorifle_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "h&k416a5",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_fire_556.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "h&k416a5",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_reload.wav"
+            "guns/boltrifle_generic/weapon_fire_300winmag.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
         "volume" : 40,
-        "variant" : "weapon_fire_suppressed",
+        "variants" : [
+            "weapon_fire_suppressed"
+        ],
         "files" : [
-            "guns/assaultrifle_generic/weapon_fire_556_sd.wav"
+            "guns/assaultrifle_generic/weapon_fire_556_sd.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
         "volume" : 90,
-        "variant" : "l_dsr_223",
+        "variants" : [
+            "v29",
+            "cerberus_laser",
+            "nx17",
+            "v29_cheap",
+            "laser_rifle",
+            "laser_cannon",
+            "bio_laser_gun"
+        ],
         "files" : [
-            "guns/assaultrifle_generic/weapon_fire_556.wav"
+            "guns/energy_generic/weapon_fire_laser.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "fire_gun",
+        "volume" : 90,
+        "variants" : [
+            "ftk93",
+            "plasma_rifle",
+            "unbio_blaster_gun",
+            "bio_blaster_gun"
+        ],
+        "files" : [
+            "guns/energy_generic/weapon_fire_plasma.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "fire_gun",
+        "volume" : 90,
+        "variants" : [
+            "flamethrower_simple",
+            "flamethrower",
+            "rm451_flamethrower",
+            "flamethrower_crude"
+        ],
+        "files" : [
+            "guns/misc_generic/weapon_fire_flamethrower.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "reload",
         "volume" : 90,
-        "variant" : "l_dsr_223",
+        "variants" : [
+            "flamethrower_simple",
+            "flamethrower",
+            "rm451_flamethrower",
+            "flamethrower_crude"
+        ],
         "files" : [
-            "guns/assaultrifle_generic/weapon_reload.wav"
+            "guns/misc_generic/weapon_reload_flamethrower.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
         "volume" : 90,
-        "variant" : "m27iar",
+        "variants" : [
+            "launcher_simple",
+            "m79",
+            "m320",
+            "mininuke_launcher",
+            "mark19"
+        ],
         "files" : [
-            "guns/assaultrifle_generic/weapon_fire_556.wav"
+            "guns/grenadelauncher_generic/weapon_fire_talon.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "reload",
         "volume" : 90,
-        "variant" : "m27iar",
+        "variants" : [
+            "launcher_simple",
+            "m79",
+            "m320",
+            "mgl",
+            "rm802",
+            "trex_gun"
+        ],
         "files" : [
-            "guns/assaultrifle_generic/weapon_reload.wav"
+            "guns/grenadelauncher_generic/weapon_reload.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
         "volume" : 90,
-        "variant" : "l_lmg_223",
+        "variants" : [
+            "mgl"
+        ],
         "files" : [
-            "guns/assaultrifle_generic/weapon_fire_556.wav"
+            "guns/grenadelauncher_generic/weapon_fire_milkor.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "fire_gun",
+        "volume" : 90,
+        "variants" : [
+            "rm802"
+        ],
+        "files" : [
+            "guns/grenadelauncher_generic/weapon_fire_gp25.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "fire_gun",
+        "volume" : 90,
+        "variants" : [
+            "LAW",
+            "m3_carlgustav",
+            "m202_flash",
+            "RPG",
+            "surv_rocketlauncher"
+        ],
+        "files" : [
+            "guns/misc_generic/weapon_fire_rocket.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "fire_gun",
+        "volume" : 90,
+        "variants" : [
+            "TANK"
+        ],
+        "files" : [
+            "guns/misc_generic/weapon_fire_120mm.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "fire_gun",
+        "volume" : 90,
+        "variants" : [
+            "coilgun",
+            "rebar_rifle"
+        ],
+        "files" : [
+            "guns/misc_generic/weapon_fire_coilgun.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "fire_gun",
+        "volume" : 90,
+        "variants" : [
+            "hk_g80",
+            "heavy_rail_rifle"
+        ],
+        "files" : [
+            "guns/energy_generic/weapon_fire_railgun.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "reload",
         "volume" : 90,
-        "variant" : "l_lmg_223",
+        "variants" : [
+            "hk_g80",
+            "plasma_rifle"
+        ],
         "files" : [
-            "guns/assaultrifle_generic/weapon_reload.wav"
+            "guns/energy_generic/weapon_reload.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
         "volume" : 90,
-        "variant" : "m9",
+        "variants" : [
+            "blunderbuss",
+            "rifle_flintlock",
+            "carbine_flintlock",
+            "pistol_flintlock"
+        ],
         "files" : [
-            "guns/pistol_generic/weapon_fire_9mm.wav"
+            "guns/boltrifle_generic/weapon_fire_flintlock.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "reload",
         "volume" : 90,
-        "variant" : "m9",
+        "variants" : [
+            "blunderbuss",
+            "rifle_flintlock",
+            "carbine_flintlock",
+            "pistol_flintlock"
+        ],
         "files" : [
-            "guns/pistol_generic/weapon_reload.wav"
+            "guns/misc_generic/weapon_reload_flintlock.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
         "volume" : 90,
-        "variant" : "steyr_aug",
+        "variants" : [
+            "rm51_assault_rifle",
+            "rm88_battle_rifle",
+            "rm614_lmg",
+            "rm2000_smg",
+            "rm99_pistol",
+            "rm103a_pistol",
+            "rm11b_sniper_rifle",
+            "rm298"
+        ],
         "files" : [
-            "guns/assaultrifle_generic/weapon_fire_556.wav"
+            "guns/smg_generic/weapon_fire_8mm.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "fire_gun",
+        "volume" : 90,
+        "variants" : [
+            "tihar",
+            "helsing",
+            "airspeargun"
+        ],
+        "files" : [
+            "guns/archery_generic/weapon_fire_boltgun.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "reload",
         "volume" : 90,
-        "variant" : "steyr_aug",
+        "variants" : [
+            "tihar",
+            "helsing",
+            "rebar_rifle",
+            "heavy_rail_rifle",
+            "speargun",
+            "minispeargun",
+            "doublespeargun",
+            "airspeargun"
+        ],
         "files" : [
-            "guns/assaultrifle_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "m249",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_fire_556.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "m249",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "v29",
-        "files" : [
-            "guns/energy_generic/weapon_fire_laser.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "cerberus_laser",
-        "files" : [
-            "guns/energy_generic/weapon_fire_laser.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "ftk93",
-        "files" : [
-            "guns/energy_generic/weapon_fire_plasma.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "nx17",
-        "files" : [
-            "guns/energy_generic/weapon_fire_laser.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "flamethrower_simple",
-        "files" : [
-            "guns/misc_generic/weapon_fire_flamethrower.wav"
+            "guns/archery_generic/weapon_reload_boltgun.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "reload",
         "volume" : 90,
-        "variant" : "flamethrower_simple",
+        "variants" : [
+            "mininuke_launcher",
+            "m3_carlgustav",
+            "m202_flash",
+            "RPG",
+            "surv_rocketlauncher"
+        ],
         "files" : [
-            "guns/misc_generic/weapon_reload_flamethrower.wav"
+            "guns/misc_generic/weapon_reload_rocket.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
         "volume" : 90,
-        "variant" : "flamethrower",
+        "variants" : [
+            "flaregun"
+        ],
         "files" : [
-            "guns/misc_generic/weapon_fire_flamethrower.wav"
+            "guns/misc_generic/weapon_fire_flare.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "reload",
         "volume" : 90,
-        "variant" : "flamethrower",
+        "variants" : [
+            "flaregun"
+        ],
         "files" : [
-            "guns/misc_generic/weapon_reload_flamethrower.wav"
+            "guns/misc_generic/weapon_reload_flare.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "fire_gun_distant",
+        "volume" : 90,
+        "variants" : [
+            "laser"
+        ],
+        "files" : [
+            "guns/energy_generic/weapon_fire_laser_distant.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
         "volume" : 90,
-        "variant" : "launcher_simple",
+        "variants" : [
+            "needlegun",
+            "needlepistol"
+        ],
         "files" : [
-            "guns/grenadelauncher_generic/weapon_fire_talon.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "launcher_simple",
-        "files" : [
-            "guns/grenadelauncher_generic/weapon_reload.wav"
+            "guns/smg_generic/weapon_fire_5x50.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
         "volume" : 90,
-        "variant" : "m79",
-        "files" : [
-            "guns/grenadelauncher_generic/weapon_fire_talon.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "m79",
-        "files" : [
-            "guns/grenadelauncher_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "m320",
-        "files" : [
-            "guns/grenadelauncher_generic/weapon_fire_talon.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "m320",
-        "files" : [
-            "guns/grenadelauncher_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "mgl",
-        "files" : [
-            "guns/grenadelauncher_generic/weapon_fire_milkor.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "mgl",
-        "files" : [
-            "guns/grenadelauncher_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "rm802",
-        "files" : [
-            "guns/grenadelauncher_generic/weapon_fire_gp25.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "rm802",
-        "files" : [
-            "guns/grenadelauncher_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "rm451_flamethrower",
-        "files" : [
-            "guns/misc_generic/weapon_fire_flamethrower.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "rm451_flamethrower",
-        "files" : [
-            "guns/misc_generic/weapon_reload_flamethrower.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "rm360_carbine",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_22cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "rm360_carbine",
-        "files" : [
-            "guns/smg_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "LAW",
-        "files" : [
-            "guns/misc_generic/weapon_fire_rocket.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "TANK",
-        "files" : [
-            "guns/misc_generic/weapon_fire_120mm.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "coilgun",
-        "files" : [
-            "guns/misc_generic/weapon_fire_coilgun.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "coilgun",
-        "files" : [
-            "guns/misc_generic/weapon_reload_nail.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "hk_g80",
-        "files" : [
-            "guns/energy_generic/weapon_fire_railgun.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "hk_g80",
-        "files" : [
-            "guns/energy_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "plasma_rifle",
-        "files" : [
-            "guns/energy_generic/weapon_fire_plasma.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "plasma_rifle",
-        "files" : [
-            "guns/energy_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "revolver_shotgun",
-        "files" : [
-            "guns/pumpshotgun_generic/weapon_fire_00.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "revolver_shotgun",
-        "files" : [
-            "guns/pumpshotgun_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "pipe_shotgun",
-        "files" : [
-            "guns/autoshotgun_generic/weapon_fire_00.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "pipe_shotgun",
-        "files" : [
-            "guns/pumpshotgun_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "blunderbuss",
-        "files" : [
-            "guns/boltrifle_generic/weapon_fire_flintlock.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "blunderbuss",
-        "files" : [
-            "guns/misc_generic/weapon_reload_flintlock.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "pipe_double_shotgun",
-        "files" : [
-            "guns/autoshotgun_generic/weapon_fire_00.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "pipe_double_shotgun",
-        "files" : [
-            "guns/pumpshotgun_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "pipe_shotgunsawn",
-        "files" : [
-            "guns/autoshotgun_generic/weapon_fire_00.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "pipe_shotgunsawn",
-        "files" : [
-            "guns/pumpshotgun_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "v29_cheap",
-        "files" : [
-            "guns/energy_generic/weapon_fire_laser.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "rm51_assault_rifle",
-        "files" : [
-            "guns/smg_generic/weapon_fire_8mm.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "rm51_assault_rifle",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "rm88_battle_rifle",
-        "files" : [
-            "guns/smg_generic/weapon_fire_8mm.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "rm88_battle_rifle",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "rm614_lmg",
-        "files" : [
-            "guns/smg_generic/weapon_fire_8mm.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "rm614_lmg",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "rm2000_smg",
-        "files" : [
-            "guns/smg_generic/weapon_fire_8mm.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "rm2000_smg",
-        "files" : [
-            "guns/smg_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "rm99_pistol",
-        "files" : [
-            "guns/smg_generic/weapon_fire_8mm.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "rm99_pistol",
-        "files" : [
-            "guns/revolver_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "rm103a_pistol",
-        "files" : [
-            "guns/smg_generic/weapon_fire_8mm.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "rm103a_pistol",
-        "files" : [
-            "guns/pistol_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "rm11b_sniper_rifle",
-        "files" : [
-            "guns/smg_generic/weapon_fire_8mm.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "rm11b_sniper_rifle",
-        "files" : [
-            "guns/semiautorifle_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "tihar",
-        "files" : [
-            "guns/archery_generic/weapon_fire_boltgun.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "tihar",
-        "files" : [
-            "guns/archery_generic/weapon_reload_boltgun.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "helsing",
-        "files" : [
-            "guns/archery_generic/weapon_fire_boltgun.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "helsing",
-        "files" : [
-            "guns/archery_generic/weapon_reload_boltgun.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "bigun",
-        "files" : [
-            "guns/pumpshotgun_generic/weapon_fire_00.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "bigun",
-        "files" : [
-            "guns/pumpshotgun_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "mininuke_launcher",
-        "files" : [
-            "guns/grenadelauncher_generic/weapon_fire_talon.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "mininuke_launcher",
-        "files" : [
-            "guns/misc_generic/weapon_reload_rocket.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "ashot",
-        "files" : [
-            "guns/autoshotgun_generic/weapon_fire_00.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "ashot",
-        "files" : [
-            "guns/pumpshotgun_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "flaregun",
-        "files" : [
-            "guns/misc_generic/weapon_fire_flare.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "flaregun",
-        "files" : [
-            "guns/misc_generic/weapon_reload_flare.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "laser_rifle",
-        "files" : [
-            "guns/energy_generic/weapon_fire_laser.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "flamethrower_crude",
-        "files" : [
-            "guns/misc_generic/weapon_fire_flamethrower.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "flamethrower_crude",
-        "files" : [
-            "guns/misc_generic/weapon_reload_flamethrower.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "m3_carlgustav",
-        "files" : [
-            "guns/misc_generic/weapon_fire_rocket.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "m3_carlgustav",
-        "files" : [
-            "guns/misc_generic/weapon_reload_rocket.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "m202_flash",
-        "files" : [
-            "guns/misc_generic/weapon_fire_rocket.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "m202_flash",
-        "files" : [
-            "guns/misc_generic/weapon_reload_rocket.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "RPG",
-        "files" : [
-            "guns/misc_generic/weapon_fire_rocket.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "RPG",
-        "files" : [
-            "guns/misc_generic/weapon_reload_rocket.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "needlegun",
-        "files" : [
-            "guns/smg_generic/weapon_fire_5x50.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "needlegun",
-        "files" : [
-            "guns/smg_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "needlepistol",
-        "files" : [
-            "guns/smg_generic/weapon_fire_5x50.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "needlepistol",
-        "files" : [
-            "guns/pistol_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "unbio_blaster_gun",
-        "files" : [
-            "guns/energy_generic/weapon_fire_plasma.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "rebar_rifle",
-        "files" : [
-            "guns/misc_generic/weapon_fire_coilgun.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "rebar_rifle",
-        "files" : [
-            "guns/archery_generic/weapon_reload_boltgun.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "heavy_rail_rifle",
-        "files" : [
-            "guns/energy_generic/weapon_fire_railgun.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "heavy_rail_rifle",
-        "files" : [
-            "guns/archery_generic/weapon_reload_boltgun.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "rm20",
-        "files" : [
-            "guns/autoshotgun_generic/weapon_fire_20x66.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "rm20",
-        "files" : [
-            "guns/autoshotgun_generic/weapon_reload.wav"
+        "variants" : [
+            "rm20",
+            "rm228"
+        ],
+        "files" : [
+            "guns/autoshotgun_generic/weapon_fire_20x66.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
         "volume" : 100,
-        "variant" : "rm120c",
+        "variants" : [
+            "rm120c"
+        ],
         "files" : [
-            "guns/pumpshotgun_generic/weapon_fire_20x66.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun_1",
-        "volume" : 100,
-        "variant" : "rm120c",
-        "files" : [
-            "guns/pumpshotgun_generic/weapon_fire_20x66.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun_2",
-        "volume" : 100,
-        "variant" : "rm120c",
-        "files" : [
-            "guns/pumpshotgun_generic/weapon_fire_20x66.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun_3",
-        "volume" : 100,
-        "variant" : "rm120c",
-        "files" : [
-            "guns/pumpshotgun_generic/weapon_fire_20x66.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun_4",
-        "volume" : 100,
-        "variant" : "rm120c",
-        "files" : [
-            "guns/pumpshotgun_generic/weapon_fire_20x66.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun_5",
-        "volume" : 100,
-        "variant" : "rm120c",
-        "files" : [
-            "guns/pumpshotgun_generic/weapon_fire_20x66.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 70,
-        "variant" : "rm120c",
-        "files" : [
-            "guns/pumpshotgun_generic/weapon_reload.wav"
+            "guns/pumpshotgun_generic/weapon_fire_20x66.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
         "volume" : 90,
-        "variant" : "rm228",
+        "variants" : [
+            "m107a1",
+            "m2browning",
+            "m2browning_sawn"
+        ],
         "files" : [
-            "guns/autoshotgun_generic/weapon_fire_20x66.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "rm228",
-        "files" : [
-            "guns/pumpshotgun_generic/weapon_reload.wav"
+            "guns/boltrifle_generic/weapon_fire_50cal.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
         "volume" : 90,
-        "variant" : "m107a1",
+        "variants" : [
+            "speargun",
+            "minispeargun",
+            "doublespeargun",
+            "hand_crossbow",
+            "crossbow",
+            "rep_crossbow"
+        ],
         "files" : [
-            "guns/boltrifle_generic/weapon_fire_50cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "m107a1",
-        "files" : [
-            "guns/boltrifle_generic/weapon_reload_mag.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "m2browning",
-        "files" : [
-            "guns/boltrifle_generic/weapon_fire_50cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "m2browning",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_reload.wav"
+            "guns/archery_generic/weapon_fire_bolt.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
         "volume" : 90,
-        "variant" : "m2browning_sawn",
+        "variants" : [
+            "tokarev",
+            "ppsh"
+        ],
         "files" : [
-            "guns/boltrifle_generic/weapon_fire_50cal.wav"
+            "guns/smg_generic/weapon_fire_762x25.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "fire_gun",
+        "volume" : 90,
+        "variants" : [
+            "walther_ppk",
+            "sig_p230"
+        ],
+        "files" : [
+            "guns/pistol_generic/weapon_fire_32cal.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "fire_gun",
+        "volume" : 90,
+        "variants" : [
+            "colt_navy"
+        ],
+        "files" : [
+            "guns/revolver_generic/weapon_fire_36cal.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "fire_gun",
+        "volume" : 90,
+        "variants" : [
+            "colt_army"
+        ],
+        "files" : [
+            "guns/revolver_generic/weapon_fire_44army.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "fire_gun",
+        "volume" : 90,
+        "variants" : [
+            "mosin91_30",
+            "mosin44",
+            "mosin91_30_ebr",
+            "mosin44_ebr"
+        ],
+        "files" : [
+            "guns/boltrifle_generic/weapon_fire_762x54r.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "fire_gun",
+        "volume" : 90,
+        "variants" : [
+            "trex_gun"
+        ],
+        "files" : [
+            "guns/boltrifle_generic/weapon_fire_700nx.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "fire_gun",
+        "volume" : 90,
+        "variants" : [
+            "watercannon"
+        ],
+        "files" : [
+            "guns/misc_generic/weapon_fire_water.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "reload",
         "volume" : 90,
-        "variant" : "m2browning_sawn",
+        "variants" : [
+            "hand_crossbow",
+            "crossbow",
+            "rep_crossbow"
+        ],
         "files" : [
-            "guns/boltrifle_generic/weapon_reload_single.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "mark19",
-        "files" : [
-            "guns/grenadelauncher_generic/weapon_fire_talon.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "mark19",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "moss_brownie",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_22cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "moss_brownie",
-        "files" : [
-            "guns/revolver_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "cop_38",
-        "files" : [
-            "guns/revolver_generic/weapon_fire_38cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "cop_38",
-        "files" : [
-            "guns/revolver_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "2_shot_special",
-        "files" : [
-            "guns/revolver_generic/weapon_fire_38cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "2_shot_special",
-        "files" : [
-            "guns/revolver_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "arx160",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_fire_762x51.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "arx160",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "speargun",
-        "files" : [
-            "guns/archery_generic/weapon_fire_bolt.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "speargun",
-        "files" : [
-            "guns/archery_generic/weapon_reload_boltgun.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "minispeargun",
-        "files" : [
-            "guns/archery_generic/weapon_fire_bolt.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "minispeargun",
-        "files" : [
-            "guns/archery_generic/weapon_reload_boltgun.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "doublespeargun",
-        "files" : [
-            "guns/archery_generic/weapon_fire_bolt.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "doublespeargun",
-        "files" : [
-            "guns/archery_generic/weapon_reload_boltgun.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "airspeargun",
-        "files" : [
-            "guns/archery_generic/weapon_fire_boltgun.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "airspeargun",
-        "files" : [
-            "guns/archery_generic/weapon_reload_boltgun.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "tokarev",
-        "files" : [
-            "guns/smg_generic/weapon_fire_762x25.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "tokarev",
-        "files" : [
-            "guns/pistol_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "ppsh",
-        "files" : [
-            "guns/smg_generic/weapon_fire_762x25.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "ppsh",
-        "files" : [
-            "guns/smg_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "walther_ppk",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_32cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "walther_ppk",
-        "files" : [
-            "guns/pistol_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "sig_p230",
-        "files" : [
-            "guns/pistol_generic/weapon_fire_32cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "sig_p230",
-        "files" : [
-            "guns/pistol_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "win70",
-        "files" : [
-            "guns/boltrifle_generic/weapon_fire_300winmag.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "win70",
-        "files" : [
-            "guns/boltrifle_generic/weapon_reload_single.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "weatherby_5",
-        "files" : [
-            "guns/boltrifle_generic/weapon_fire_300winmag.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "weatherby_5",
-        "files" : [
-            "guns/boltrifle_generic/weapon_reload_single.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "colt_navy",
-        "files" : [
-            "guns/revolver_generic/weapon_fire_36cal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "colt_navy",
-        "files" : [
-            "guns/revolver_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "colt_army",
-        "files" : [
-            "guns/revolver_generic/weapon_fire_44army.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "colt_army",
-        "files" : [
-            "guns/revolver_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "rifle_flintlock",
-        "files" : [
-            "guns/boltrifle_generic/weapon_fire_flintlock.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "rifle_flintlock",
-        "files" : [
-            "guns/misc_generic/weapon_reload_flintlock.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "carbine_flintlock",
-        "files" : [
-            "guns/boltrifle_generic/weapon_fire_flintlock.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "carbine_flintlock",
-        "files" : [
-            "guns/misc_generic/weapon_reload_flintlock.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "pistol_flintlock",
-        "files" : [
-            "guns/boltrifle_generic/weapon_fire_flintlock.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "pistol_flintlock",
-        "files" : [
-            "guns/misc_generic/weapon_reload_flintlock.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "mosin91_30",
-        "files" : [
-            "guns/boltrifle_generic/weapon_fire_762x54r.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "mosin91_30",
-        "files" : [
-            "guns/boltrifle_generic/weapon_reload_single.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "mosin44",
-        "files" : [
-            "guns/boltrifle_generic/weapon_fire_762x54r.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "mosin44",
-        "files" : [
-            "guns/boltrifle_generic/weapon_reload_single.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "mosin91_30_ebr",
-        "files" : [
-            "guns/boltrifle_generic/weapon_fire_762x54r.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "mosin91_30_ebr",
-        "files" : [
-            "guns/boltrifle_generic/weapon_reload_single.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "mosin44_ebr",
-        "files" : [
-            "guns/boltrifle_generic/weapon_fire_762x54r.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "mosin44_ebr",
-        "files" : [
-            "guns/boltrifle_generic/weapon_reload_single.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "trex_gun",
-        "files" : [
-            "guns/boltrifle_generic/weapon_fire_700nx.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "trex_gun",
-        "files" : [
-            "guns/grenadelauncher_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "rm298",
-        "files" : [
-            "guns/smg_generic/weapon_fire_8mm.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "rm298",
-        "files" : [
-            "guns/assaultrifle_generic/weapon_reload.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "laser_cannon",
-        "files" : [
-            "guns/energy_generic/weapon_fire_laser.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "surv_rocketlauncher",
-        "files" : [
-            "guns/misc_generic/weapon_fire_rocket.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "surv_rocketlauncher",
-        "files" : [
-            "guns/misc_generic/weapon_reload_rocket.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "watercannon",
-        "files" : [
-            "guns/misc_generic/weapon_fire_water.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "unbio_chain_lightning",
-        "files" : [
-            "guns/energy_generic/weapon_fire_lightning.wav"
+            "guns/archery_generic/weapon_reload_crossbow.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
         "volume" : 80,
-        "variant" : "hand_crossbow",
+        "variants" : [
+            "selfbow",
+            "shortbow",
+            "compositebow",
+            "compbow",
+            "recurbow",
+            "reflexbow",
+            "longbow",
+            "reflexrecurvebow"
+        ],
         "files" : [
-            "guns/archery_generic/weapon_fire_bolt.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "hand_crossbow",
-        "files" : [
-            "guns/archery_generic/weapon_reload_crossbow.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 80,
-        "variant" : "crossbow",
-        "files" : [
-            "guns/archery_generic/weapon_fire_bolt.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "crossbow",
-        "files" : [
-            "guns/archery_generic/weapon_reload_crossbow.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 80,
-        "variant" : "rep_crossbow",
-        "files" : [
-            "guns/archery_generic/weapon_fire_bolt.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "rep_crossbow",
-        "files" : [
-            "guns/archery_generic/weapon_reload_crossbow.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 80,
-        "variant" : "selfbow",
-        "files" : [
-            "guns/archery_generic/weapon_fire_arrow.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
-        "variant" : "shortbow",
-        "files" : [
-            "guns/archery_generic/weapon_fire_arrow.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 80,
-        "variant" : "compositebow",
-        "files" : [
-            "guns/archery_generic/weapon_fire_arrow.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 80,
-        "variant" : "compbow",
-        "files" : [
-            "guns/archery_generic/weapon_fire_arrow.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 80,
-        "variant" : "recurbow",
-        "files" : [
-            "guns/archery_generic/weapon_fire_arrow.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 80,
-        "variant" : "reflexbow",
-        "files" : [
-            "guns/archery_generic/weapon_fire_arrow.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 80,
-        "variant" : "longbow",
-        "files" : [
-            "guns/archery_generic/weapon_fire_arrow.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 80,
-        "variant" : "reflexrecurvebow",
-        "files" : [
-            "guns/archery_generic/weapon_fire_arrow.wav"
+            "guns/archery_generic/weapon_fire_arrow.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun_distant",
         "volume" : 100,
-        "variant" : "rifle",
+        "variants" : [
+            "rifle"
+        ],
         "files" : [
-            "guns/assaultrifle_generic/weapon_fire_assaultrifle_distant.wav"
+            "guns/assaultrifle_generic/weapon_fire_assaultrifle_distant.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun_distant",
         "volume" : 100,
-        "variant" : "smg",
+        "variants" : [
+            "smg"
+        ],
         "files" : [
-            "guns/smg_generic/weapon_fire_smg_distant.wav"
+            "guns/smg_generic/weapon_fire_smg_distant.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun_distant",
         "volume" : 100,
-        "variant" : "pistol",
+        "variants" : [
+            "pistol"
+        ],
         "files" : [
-            "guns/pistol_generic/weapon_fire_pistol_distant.wav"
+            "guns/pistol_generic/weapon_fire_pistol_distant.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun_distant",
         "volume" : 100,
-        "variant" : "shotgun",
+        "variants" : [
+            "shotgun"
+        ],
         "files" : [
-            "guns/autoshotgun_generic/weapon_fire_shotgun_distant.wav"
+            "guns/autoshotgun_generic/weapon_fire_shotgun_distant.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "melee_swing",
-        "variant" : "default",
-        "volume" : 85,
+        "volume" : 65,
+        "variants" : [
+            "default"
+        ],
         "files" : [
-            "melee/small_bash/swing_1.wav",
-            "melee/small_bash/swing_2.wav",
-            "melee/small_bash/swing_3.wav"
+            "melee/small_cutting/swing_1.ogg",
+            "melee/small_cutting/swing_2.ogg",
+            "melee/small_cutting/swing_3.ogg",
+            "melee/small_cutting/swing_4.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "melee_hit_flesh",
-        "variant" : "default",
-        "volume" : 85,
+        "volume" : 65,
+        "variants" : [
+            "default"
+        ],
         "files" : [
-            "melee/small_bash/hit_flesh_1.wav",
-            "melee/small_bash/hit_flesh_2.wav",
-            "melee/small_bash/hit_flesh_3.wav"
+            "melee/small_bash/hit_flesh_1.ogg",
+            "melee/small_bash/hit_flesh_2.ogg",
+            "melee/small_bash/hit_flesh_3.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "melee_hit_metal",
-        "variant" : "default",
         "volume" : 85,
+        "variants" : [
+            "default"
+        ],
         "files" : [
-            "melee/small_bash/hit_metal_1.wav",
-            "melee/small_bash/hit_metal_2.wav",
-            "melee/small_bash/hit_metal_3.wav",
-            "melee/small_bash/hit_metal_4.wav",
-            "melee/small_bash/hit_metal_5.wav",
-            "melee/small_bash/hit_metal_6.wav"
+            "melee/small_bash/hit_metal_1.ogg",
+            "melee/small_bash/hit_metal_2.ogg",
+            "melee/small_bash/hit_metal_3.ogg",
+            "melee/small_bash/hit_metal_4.ogg",
+            "melee/small_bash/hit_metal_5.ogg",
+            "melee/small_bash/hit_metal_6.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "melee_swing",
-        "variant" : "small_bash",
         "volume" : 85,
+        "variants" : [
+            "small_bash"
+        ],
         "files" : [
-            "melee/small_bash/swing_1.wav",
-            "melee/small_bash/swing_2.wav",
-            "melee/small_bash/swing_3.wav"
+            "melee/small_bash/swing_1.ogg",
+            "melee/small_bash/swing_2.ogg",
+            "melee/small_bash/swing_3.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "melee_hit_flesh",
-        "variant" : "small_bash",
         "volume" : 85,
+        "variants" : [
+            "small_bash"
+        ],
         "files" : [
-            "melee/small_bash/hit_flesh_1.wav",
-            "melee/small_bash/hit_flesh_2.wav",
-            "melee/small_bash/hit_flesh_3.wav"
+            "melee/small_bash/hit_flesh_1.ogg",
+            "melee/small_bash/hit_flesh_2.ogg",
+            "melee/small_bash/hit_flesh_3.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "melee_hit_metal",
-        "variant" : "small_bash",
         "volume" : 85,
+        "variants" : [
+            "small_bash"
+        ],
         "files" : [
-            "melee/small_bash/hit_metal_1.wav",
-            "melee/small_bash/hit_metal_2.wav",
-            "melee/small_bash/hit_metal_3.wav",
-            "melee/small_bash/hit_metal_4.wav",
-            "melee/small_bash/hit_metal_5.wav",
-            "melee/small_bash/hit_metal_6.wav"
+            "melee/small_bash/hit_metal_1.ogg",
+            "melee/small_bash/hit_metal_2.ogg",
+            "melee/small_bash/hit_metal_3.ogg",
+            "melee/small_bash/hit_metal_4.ogg",
+            "melee/small_bash/hit_metal_5.ogg",
+            "melee/small_bash/hit_metal_6.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "melee_swing",
-        "variant" : "big_cutting",
         "volume" : 85,
+        "variants" : [
+            "big_cutting"
+        ],
         "files" : [
-            "melee/big_cutting/swing_1.wav",
-            "melee/big_cutting/swing_2.wav",
-            "melee/big_cutting/swing_3.wav",
-            "melee/big_cutting/swing_4.wav"
+            "melee/big_cutting/swing_1.ogg",
+            "melee/big_cutting/swing_2.ogg",
+            "melee/big_cutting/swing_3.ogg",
+            "melee/big_cutting/swing_4.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "melee_hit_flesh",
-        "variant" : "big_cutting",
         "volume" : 85,
+        "variants" : [
+            "big_cutting"
+        ],
         "files" : [
-            "melee/big_cutting/hit_flesh_1.wav",
-            "melee/big_cutting/hit_flesh_2.wav",
-            "melee/big_cutting/hit_flesh_3.wav",
-            "melee/big_cutting/hit_flesh_4.wav",
-            "melee/big_cutting/hit_flesh_5.wav",
-            "melee/big_cutting/hit_flesh_6.wav"
+            "melee/big_cutting/hit_flesh_1.ogg",
+            "melee/big_cutting/hit_flesh_2.ogg",
+            "melee/big_cutting/hit_flesh_3.ogg",
+            "melee/big_cutting/hit_flesh_4.ogg",
+            "melee/big_cutting/hit_flesh_5.ogg",
+            "melee/big_cutting/hit_flesh_6.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "melee_hit_metal",
-        "variant" : "big_cutting",
         "volume" : 85,
+        "variants" : [
+            "big_cutting"
+        ],
         "files" : [
-            "melee/big_cutting/hit_metal_1.wav",
-            "melee/big_cutting/hit_metal_2.wav",
-            "melee/big_cutting/hit_metal_3.wav",
-            "melee/big_cutting/hit_metal_4.wav"
+            "melee/big_cutting/hit_metal_1.ogg",
+            "melee/big_cutting/hit_metal_2.ogg",
+            "melee/big_cutting/hit_metal_3.ogg",
+            "melee/big_cutting/hit_metal_4.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "melee_swing",
-        "variant" : "small_cutting",
         "volume" : 85,
+        "variants" : [
+            "small_cutting"
+        ],
         "files" : [
-            "melee/small_cutting/swing_1.wav",
-            "melee/small_cutting/swing_2.wav",
-            "melee/small_cutting/swing_3.wav",
-            "melee/small_cutting/swing_4.wav"
+            "melee/small_cutting/swing_1.ogg",
+            "melee/small_cutting/swing_2.ogg",
+            "melee/small_cutting/swing_3.ogg",
+            "melee/small_cutting/swing_4.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "melee_hit_flesh",
-        "variant" : "small_cutting",
         "volume" : 85,
+        "variants" : [
+            "small_cutting"
+        ],
         "files" : [
-            "melee/small_cutting/hit_flesh_1.wav",
-            "melee/small_cutting/hit_flesh_2.wav",
-            "melee/small_cutting/hit_flesh_3.wav",
-            "melee/small_cutting/hit_flesh_4.wav"
+            "melee/small_cutting/hit_flesh_1.ogg",
+            "melee/small_cutting/hit_flesh_2.ogg",
+            "melee/small_cutting/hit_flesh_3.ogg",
+            "melee/small_cutting/hit_flesh_4.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "melee_hit_metal",
-        "variant" : "small_cutting",
         "volume" : 85,
+        "variants" : [
+            "small_cutting"
+        ],
         "files" : [
-            "melee/small_cutting/hit_metal_1.wav",
-            "melee/small_cutting/hit_metal_2.wav",
-            "melee/small_cutting/hit_metal_3.wav",
-            "melee/small_cutting/hit_metal_4.wav"
+            "melee/small_cutting/hit_metal_1.ogg",
+            "melee/small_cutting/hit_metal_2.ogg",
+            "melee/small_cutting/hit_metal_3.ogg",
+            "melee/small_cutting/hit_metal_4.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "melee_swing",
-        "variant" : "big_bash",
         "volume" : 85,
+        "variants" : [
+            "big_bash"
+        ],
         "files" : [
-            "melee/big_bash/swing_1.wav",
-            "melee/big_bash/swing_2.wav",
-            "melee/big_bash/swing_3.wav"
+            "melee/big_bash/swing_1.ogg",
+            "melee/big_bash/swing_2.ogg",
+            "melee/big_bash/swing_3.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "melee_hit_flesh",
-        "variant" : "big_bash",
         "volume" : 85,
+        "variants" : [
+            "big_bash"
+        ],
         "files" : [
-            "melee/big_bash/hit_flesh_1.wav",
-            "melee/big_bash/hit_flesh_2.wav",
-            "melee/big_bash/hit_flesh_3.wav"
+            "melee/big_bash/hit_flesh_1.ogg",
+            "melee/big_bash/hit_flesh_2.ogg",
+            "melee/big_bash/hit_flesh_3.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "melee_hit_metal",
-        "variant" : "big_bash",
         "volume" : 85,
+        "variants" : [
+            "big_bash"
+        ],
         "files" : [
-            "melee/big_bash/hit_metal_1.wav",
-            "melee/big_bash/hit_metal_2.wav",
-            "melee/big_bash/hit_metal_3.wav",
-            "melee/big_bash/hit_metal_4.wav",
-            "melee/big_bash/hit_metal_5.wav",
-            "melee/big_bash/hit_metal_6.wav"
+            "melee/big_bash/hit_metal_1.ogg",
+            "melee/big_bash/hit_metal_2.ogg",
+            "melee/big_bash/hit_metal_3.ogg",
+            "melee/big_bash/hit_metal_4.ogg",
+            "melee/big_bash/hit_metal_5.ogg",
+            "melee/big_bash/hit_metal_6.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "chainsaw_cord",
-        "variant" : "chainsaw_on",
         "volume" : 95,
+        "variants" : [
+            "chainsaw_on"
+        ],
         "files" : [
-            "melee/big_misc/saw_pull_1.wav",
-            "melee/big_misc/saw_pull_2.wav",
-            "melee/big_misc/saw_pull_3.wav",
-            "melee/big_misc/saw_pull_4.wav"
+            "melee/big_misc/saw_pull_1.ogg",
+            "melee/big_misc/saw_pull_2.ogg",
+            "melee/big_misc/saw_pull_3.ogg",
+            "melee/big_misc/saw_pull_4.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "chainsaw_start",
-        "variant" : "chainsaw_on",
         "volume" : 55,
+        "variants" : [
+            "chainsaw_on"
+        ],
         "files" : [
-            "melee/big_misc/saw_start_1.wav",
-            "melee/big_misc/saw_start_2.wav"
+            "melee/big_misc/saw_start_1.ogg",
+            "melee/big_misc/saw_start_2.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "chainsaw_stop",
-        "variant" : "chainsaw_on",
         "volume" : 55,
+        "variants" : [
+            "chainsaw_on"
+        ],
         "files" : [
-            "melee/big_misc/saw_stop_1.wav",
-            "melee/big_misc/saw_stop_2.wav"
+            "melee/big_misc/saw_stop_1.ogg",
+            "melee/big_misc/saw_stop_2.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "chainsaw_idle",
-        "variant" : "chainsaw_on",
         "volume" : 45,
+        "variants" : [
+            "chainsaw_on"
+        ],
         "files" : [
-            "melee/big_misc/saw_idle_loop_1.wav"
+            "melee/big_misc/saw_idle_loop_1.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "melee_swing_start",
-        "variant" : "chainsaw_on",
         "volume" : 55,
+        "variants" : [
+            "chainsaw_on"
+        ],
         "files" : [
-            "melee/big_misc/saw_rev_start_1.wav",
-            "melee/big_misc/saw_rev_start_2.wav"
+            "melee/big_misc/saw_rev_start_1.ogg",
+            "melee/big_misc/saw_rev_start_2.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "melee_swing_end",
-        "variant" : "chainsaw_on",
         "volume" : 55,
+        "variants" : [
+            "chainsaw_on"
+        ],
         "files" : [
-            "melee/big_misc/saw_rev_end_1.wav",
-            "melee/big_misc/saw_rev_end_2.wav"
+            "melee/big_misc/saw_rev_end_1.ogg",
+            "melee/big_misc/saw_rev_end_2.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "melee_swing",
-        "variant" : "chainsaw_on",
         "volume" : 55,
+        "variants" : [
+            "chainsaw_on"
+        ],
         "files" : [
-            "melee/big_misc/saw_swing_full.wav"
+            "melee/big_misc/saw_swing_full.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "melee_hit_flesh",
-        "variant" : "chainsaw_on",
         "volume" : 75,
+        "variants" : [
+            "chainsaw_on"
+        ],
         "files" : [
-            "melee/big_misc/hit_flesh_1.wav",
-            "melee/big_misc/hit_flesh_2.wav",
-            "melee/big_misc/hit_flesh_3.wav"
+            "melee/big_misc/hit_flesh_1.ogg",
+            "melee/big_misc/hit_flesh_2.ogg",
+            "melee/big_misc/hit_flesh_3.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "melee_hit_metal",
-        "variant" : "chainsaw_on",
         "volume" : 75,
+        "variants" : [
+            "chainsaw_on"
+        ],
         "files" : [
-            "melee/big_misc/hit_metal_1.wav",
-            "melee/big_misc/hit_metal_2.wav",
-            "melee/big_misc/hit_metal_3.wav"
+            "melee/big_misc/hit_metal_1.ogg",
+            "melee/big_misc/hit_metal_2.ogg",
+            "melee/big_misc/hit_metal_3.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "weapon_theme",
-        "variant" : "chainsaw",
         "volume" : 75,
+        "variants" : [
+            "chainsaw"
+        ],
         "files" : [
-            "music/chainsaw_theme/chainsaw_theme.wav"
+            "music/chainsaw_theme/chainsaw_theme.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "player_laugh",
-        "variant" : "laugh_f",
         "volume" : 100,
+        "variants" : [
+            "laugh_f"
+        ],
         "files" : [
-            "player/laugh_f/laugh_1.wav",
-            "player/laugh_f/laugh_2.wav",
-            "player/laugh_f/laugh_3.wav"
+            "player/laugh_f/laugh_1.ogg",
+            "player/laugh_f/laugh_2.ogg",
+            "player/laugh_f/laugh_3.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "player_laugh",
-        "variant" : "laugh_m",
-        "volume" : 110,
+        "volume" : 100,
+        "variants" : [
+            "laugh_m"
+        ],
         "files" : [
-            "player/laugh_m/laugh_1.wav",
-            "player/laugh_m/laugh_2.wav",
-            "player/laugh_m/laugh_3.wav",
-            "player/laugh_m/laugh_4.wav",
-            "player/laugh_m/laugh_5.wav",
-            "player/laugh_m/laugh_6.wav",
-            "player/laugh_m/laugh_7.wav"
+            "player/laugh_m/laugh_1.ogg",
+            "player/laugh_m/laugh_2.ogg",
+            "player/laugh_m/laugh_3.ogg",
+            "player/laugh_m/laugh_4.ogg",
+            "player/laugh_m/laugh_5.ogg",
+            "player/laugh_m/laugh_6.ogg",
+            "player/laugh_m/laugh_7.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "plmove",
-        "variant" : "walk_grass",
         "volume" : 30,
+        "variants" : [
+            "walk_grass"
+        ],
         "files" : [
-            "env/walk/walk_grass1.wav",
-            "env/walk/walk_grass2.wav",
-            "env/walk/walk_grass3.wav",
-            "env/walk/walk_grass4.wav",
-            "env/walk/walk_grass5.wav",
-            "env/walk/walk_grass6.wav"
+            "env/walk/walk_grass1.ogg",
+            "env/walk/walk_grass2.ogg",
+            "env/walk/walk_grass3.ogg",
+            "env/walk/walk_grass4.ogg",
+            "env/walk/walk_grass5.ogg",
+            "env/walk/walk_grass6.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "plmove",
-        "variant" : "walk_dirt",
         "volume" : 30,
+        "variants" : [
+            "walk_dirt"
+        ],
         "files" : [
-            "env/walk/walk_dirt1.wav",
-            "env/walk/walk_dirt2.wav",
-            "env/walk/walk_dirt3.wav",
-            "env/walk/walk_dirt4.wav",
-            "env/walk/walk_dirt5.wav",
-            "env/walk/walk_dirt6.wav"
+            "env/walk/walk_dirt1.ogg",
+            "env/walk/walk_dirt2.ogg",
+            "env/walk/walk_dirt3.ogg",
+            "env/walk/walk_dirt4.ogg",
+            "env/walk/walk_dirt5.ogg",
+            "env/walk/walk_dirt6.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "plmove",
-        "variant" : "walk_metal",
         "volume" : 30,
+        "variants" : [
+            "walk_metal"
+        ],
         "files" : [
-            "env/walk/walk_metal1.wav",
-            "env/walk/walk_metal2.wav",
-            "env/walk/walk_metal3.wav",
-            "env/walk/walk_metal4.wav",
-            "env/walk/walk_metal5.wav",
-            "env/walk/walk_metal6.wav"
+            "env/walk/walk_metal1.ogg",
+            "env/walk/walk_metal2.ogg",
+            "env/walk/walk_metal3.ogg",
+            "env/walk/walk_metal4.ogg",
+            "env/walk/walk_metal5.ogg",
+            "env/walk/walk_metal6.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "plmove",
-        "variant" : "walk_water",
         "volume" : 30,
+        "variants" : [
+            "walk_water"
+        ],
         "files" : [
-            "env/walk/walk_water1.wav",
-            "env/walk/walk_water2.wav",
-            "env/walk/walk_water3.wav",
-            "env/walk/walk_water4.wav",
-            "env/walk/walk_water5.wav",
-            "env/walk/walk_water6.wav"
+            "env/walk/walk_water1.ogg",
+            "env/walk/walk_water2.ogg",
+            "env/walk/walk_water3.ogg",
+            "env/walk/walk_water4.ogg",
+            "env/walk/walk_water5.ogg",
+            "env/walk/walk_water6.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "plmove",
-        "variant" : "walk_tarmac",
         "volume" : 40,
+        "variants" : [
+            "walk_tarmac"
+        ],
         "files" : [
-            "env/walk/walk_tarmac1.wav",
-            "env/walk/walk_tarmac2.wav",
-            "env/walk/walk_tarmac3.wav",
-            "env/walk/walk_tarmac4.wav",
-            "env/walk/walk_tarmac5.wav",
-            "env/walk/walk_tarmac6.wav"
+            "env/walk/walk_tarmac1.ogg",
+            "env/walk/walk_tarmac2.ogg",
+            "env/walk/walk_tarmac3.ogg",
+            "env/walk/walk_tarmac4.ogg",
+            "env/walk/walk_tarmac5.ogg",
+            "env/walk/walk_tarmac6.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "plmove",
-        "variant" : "walk_barefoot",
         "volume" : 50,
+        "variants" : [
+            "walk_barefoot"
+        ],
         "files" : [
-            "env/walk/walk_barefoot1.wav",
-            "env/walk/walk_barefoot2.wav",
-            "env/walk/walk_barefoot3.wav",
-            "env/walk/walk_barefoot4.wav",
-            "env/walk/walk_barefoot5.wav",
-            "env/walk/walk_barefoot6.wav"
+            "env/walk/walk_barefoot1.ogg",
+            "env/walk/walk_barefoot2.ogg",
+            "env/walk/walk_barefoot3.ogg",
+            "env/walk/walk_barefoot4.ogg",
+            "env/walk/walk_barefoot5.ogg",
+            "env/walk/walk_barefoot6.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "plmove",
-        "variant" : "clear_obstacle",
         "volume" : 80,
+        "variants" : [
+            "clear_obstacle"
+        ],
         "files" : [
-            "env/walk/clear_obstacle1.wav",
-            "env/walk/clear_obstacle2.wav",
-            "env/walk/clear_obstacle3.wav"
+            "env/walk/clear_obstacle1.ogg",
+            "env/walk/clear_obstacle2.ogg",
+            "env/walk/clear_obstacle3.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "open_door",
-        "variant" : "default",
         "volume" : 95,
+        "variants" : [
+            "t_door_c",
+            "t_rdoor_c",
+            "t_door_locked_interior",
+            "t_door_locked",
+            "t_door_locked_peep",
+            "t_door_locked_alarm",
+            "t_door_c_peep"
+        ],
         "files" : [
             "env/open_close/dooropen1.ogg"
         ]
@@ -3593,7 +1583,12 @@
         "type": "sound_effect",
         "id" : "close_door",
         "volume" : 95,
-        "variant" : "default",
+        "variants" : [
+            "t_door_o",
+            "t_rdoor_o",
+            "t_door_o_peep"
+            
+        ],
         "files" : [
             "env/open_close/doorclose1.ogg"
         ]
@@ -3601,8 +1596,11 @@
     {
         "type": "sound_effect",
         "id" : "open_door",
-        "variant" : "t_door_metal_c",
         "volume" : 75,
+        "variants" : [
+            "t_door_metal_c",
+            "t_door_metal_pickable"
+        ],
         "files" : [
             "env/open_close/mdooropen1.ogg"
         ]
@@ -3610,8 +1608,10 @@
     {
         "type": "sound_effect",
         "id" : "close_door",
-        "variant" : "t_door_metal_o",
         "volume" : 75,
+        "variants" : [
+            "t_door_metal_o"
+        ],
         "files" : [
             "env/open_close/mdoorclose1.ogg"
         ]
@@ -3619,8 +1619,10 @@
     {
         "type": "sound_effect",
         "id" : "open_door",
-        "variant" : "t_window_domestic",
         "volume" : 85,
+        "variants" : [
+            "t_window_domestic"
+        ],
         "files" : [
             "env/open_close/windowopen1.ogg"
         ]
@@ -3628,8 +1630,10 @@
     {
         "type": "sound_effect",
         "id" : "close_door",
-        "variant" : "t_window_open",
         "volume" : 85,
+        "variants" : [
+            "t_window_open"
+        ],
         "files" : [
             "env/open_close/windowclose1.ogg"
         ]
@@ -3637,8 +1641,11 @@
     {
         "type": "sound_effect",
         "id" : "close_door",
-        "variant" : "t_window_domestic",
         "volume" : 75,
+        "variants" : [
+            "t_window_domestic",
+            "t_curtains"
+        ],
         "files" : [
             "env/open_close/curtainclose1.ogg"
         ]
@@ -3646,8 +1653,10 @@
     {
         "type": "sound_effect",
         "id" : "open_door",
-        "variant" : "t_curtains",
         "volume" : 75,
+        "variants" : [
+            "t_curtains"
+        ],
         "files" : [
             "env/open_close/curtainclose1.ogg"
         ]
@@ -3655,125 +1664,102 @@
     {
         "type": "sound_effect",
         "id" : "open_door",
-        "variant" : "f_canvas_door",
         "volume" : 100,
+        "variants" : [
+            "f_canvas_door",
+            "f_large_canvas_door",
+            "f_skin_door"
+        ],
         "files" : [
-            "env/open_close/tent_door_open.wav"
+            "env/open_close/tent_door_open.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "close_door",
-        "variant" : "f_canvas_door_o",
         "volume" : 100,
+        "variants" : [
+            "f_canvas_door_o",
+            "f_large_canvas_door_o",
+            "f_skin_door_o"
+        ],
         "files" : [
-            "env/open_close/tent_door_close.wav"
+            "env/open_close/tent_door_close.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "open_door",
-        "variant" : "f_large_canvas_door",
         "volume" : 100,
+        "variants" : [
+            "t_chaingate_c"
+        ],
         "files" : [
-            "env/open_close/tent_door_open.wav"
+            "env/open_close/metal_fence_open.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "close_door",
-        "variant" : "f_large_canvas_door_o",
         "volume" : 100,
+        "variants" : [
+            "t_chaingate_o"
+        ],
         "files" : [
-            "env/open_close/tent_door_close.wav"
+            "env/open_close/metal_fence_close.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "open_door",
-        "variant" : "f_skin_door",
         "volume" : 100,
+        "variants" : [
+            "t_door_bar_c"
+        ],
         "files" : [
-            "env/open_close/tent_door_open.wav"
+            "env/open_close/portcullis_open.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "close_door",
-        "variant" : "f_skin_door_o",
         "volume" : 100,
+        "variants" : [
+            "t_door_bar_o"
+        ],
         "files" : [
-            "env/open_close/tent_door_close.wav"
+            "env/open_close/portcullis_close.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "open_door",
-        "variant" : "t_chaingate_c",
         "volume" : 100,
+        "variants" : [
+            "t_door_glass_c"
+        ],
         "files" : [
-            "env/open_close/metal_fence_open.wav"
+            "env/open_close/sliding_door_open.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "close_door",
-        "variant" : "t_chaingate_o",
         "volume" : 100,
+        "variants" : [
+            "t_door_glass_o"
+        ],
         "files" : [
-            "env/open_close/metal_fence_close.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "open_door",
-        "variant" : "t_door_bar_c",
-        "volume" : 100,
-        "files" : [
-            "env/open_close/portcullis_open.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "close_door",
-        "variant" : "t_door_bar_o",
-        "volume" : 100,
-        "files" : [
-            "env/open_close/portcullis_close.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "open_door",
-        "variant" : "t_door_glass_c",
-        "volume" : 100,
-        "files" : [
-            "env/open_close/sliding_door_open.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "close_door",
-        "variant" : "t_door_glass_o",
-        "volume" : 100,
-        "files" : [
-            "env/open_close/sliding_door_close.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "bash",
-        "volume" : 55,
-        "variant" : "default",
-        "files" : [
-            "env/smashes/bash1.ogg"
+            "env/open_close/sliding_door_close.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "smash",
-        "variant" : "wall",
         "volume" : 85,
+        "variants" : [
+            "wall"
+        ],
         "files" : [
             "env/smashes/smashwall1.ogg"
         ]
@@ -3781,8 +1767,11 @@
     {
         "type": "sound_effect",
         "id" : "smash",
-        "variant" : "door",
         "volume" : 90,
+        "variants" : [
+            "door",
+            "door_boarded"
+        ],
         "files" : [
             "env/smashes/smashdoor1.ogg"
         ]
@@ -3790,17 +1779,10 @@
     {
         "type": "sound_effect",
         "id" : "smash",
-        "variant" : "door_boarded",
-        "volume" : 90,
-        "files" : [
-            "env/smashes/smashdoor1.ogg"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "smash",
-        "variant" : "glass",
         "volume" : 75,
+        "variants" : [
+            "glass"
+        ],
         "files" : [
             "env/smashes/smashglass1.ogg"
         ]
@@ -3808,729 +1790,1118 @@
     {
         "type": "sound_effect",
         "id" : "smash",
-        "variant" : "swing",
         "volume" : 35,
+        "variants" : [
+            "swing"
+        ],
         "files" : [
-            "env/smashes/bash_swing.wav"
+            "env/smashes/bash_swing.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "smash_success",
-        "variant" : "hit_vehicle",
-        "volume" : 50,
-        "files" : [
-            "env/smashes/smash_vehicle_1.wav",
-            "env/smashes/smash_vehicle_2.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "smash_success",
-        "variant" : "smash_glass_contents",
-        "volume" : 50,
-        "files" : [
-            "env/smashes/smash_glass.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "smash_success",
-        "variant" : "t_curtains",
-        "volume" : 100,
-        "files" : [
-            "env/smashes/smash_glass.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "smash_fail",
-        "variant" : "t_curtains",
-        "volume" : 100,
-        "files" : [
-            "env/smashes/hit_glass.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "smash_success",
-        "variant" : "t_window_domestic",
-        "volume" : 100,
-        "files" : [
-            "env/smashes/smash_glass.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "smash_fail",
-        "variant" : "t_window_domestic",
-        "volume" : 100,
-        "files" : [
-            "env/smashes/hit_glass.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "smash_success",
-        "variant" : "t_window_open",
-        "volume" : 100,
-        "files" : [
-            "env/smashes/smash_glass.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "smash_fail",
-        "variant" : "t_window_open",
-        "volume" : 100,
-        "files" : [
-            "env/smashes/hit_glass.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "smash_success",
-        "variant" : "t_window_frame",
-        "volume" : 50,
-        "files" : [
-            "env/smashes/smash_glass_fragments.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "smash_fail",
-        "variant" : "t_window_frame",
-        "volume" : 50,
-        "files" : [
-            "env/smashes/smash_glass_fragments.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "smash_fail",
-        "variant" : "f_locker",
         "volume" : 80,
+        "variants" : [
+            "hit_vehicle"
+        ],
         "files" : [
-            "env/smashes/hit_door_metal.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "smash_success",
-        "variant" : "f_locker",
-        "volume" : 100,
-        "files" : [
-            "env/smashes/smash_door_metal.wav"
+            "env/smashes/smash_vehicle_1.ogg",
+            "env/smashes/smash_vehicle_2.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "smash_fail",
-        "variant" : "t_door_c",
-        "volume" : 100,
+        "volume" : 80,
+        "variants" : [
+            "t_shrub",
+            "f_indoor_plant",
+            "f_straw_bed",
+            "f_indoor_plant_y"
+        ],
         "files" : [
-            "env/smashes/hit_door_wooden.wav"
+            "env/smashes/smash_shrub_1.ogg",
+            "env/smashes/smash_shrub_2.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "smash_success",
-        "variant" : "t_door_c",
-        "volume" : 100,
+        "volume" : 80,
+        "variants" : [
+            "t_shrub",
+            "f_indoor_plant",
+            "f_straw_bed",
+            "f_indoor_plant_y"
+        ],
         "files" : [
-            "env/smashes/smash_door_wooden.wav"
+            "env/smashes/smash_shrub_1.ogg",
+            "env/smashes/smash_shrub_2.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "smash_fail",
-        "variant" : "t_door_b",
         "volume" : 100,
+        "variants" : [
+            "t_curtains",
+            "t_window_alarm",
+            "t_window",
+            "t_window_alarm_taped",
+            "t_wall_glass_alarm",
+            "t_wall_glass",
+            "t_window_domestic",
+            "t_window_open",
+            "f_bigmirror",
+            "f_vending_c",
+            "f_vending_reinforced",
+            "t_reinforced_glass",
+            "f_displaycase"
+        ],
         "files" : [
-            "env/smashes/hit_door_wooden.wav"
+            "env/smashes/hit_glass.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "smash_success",
-        "variant" : "t_door_b",
-        "volume" : 100,
+        "volume" : 50,
+        "variants" : [
+            "smash_glass_contents",
+            "t_curtains",
+            "t_window_domestic",
+            "t_window_alarm",
+            "t_window_alarm_taped",
+            "t_wall_glass_alarm",
+            "t_wall_glass",
+            "t_window",
+            "t_window_open",
+            "f_bigmirror",
+            "f_vending_c",
+            "f_vending_reinforced",
+            "t_reinforced_glass",
+            "f_displaycase"
+        ],
         "files" : [
-            "env/smashes/smash_door_wooden.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "smash_fail",
-        "variant" : "f_bench",
-        "volume" : 100,
-        "files" : [
-            "env/smashes/hit_door_wooden.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "smash_success",
-        "variant" : "f_bench",
-        "volume" : 100,
-        "files" : [
-            "env/smashes/smash_door_wooden.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "smash_fail",
-        "variant" : "f_counter",
-        "volume" : 100,
-        "files" : [
-            "env/smashes/hit_door_wooden.wav"
+            "env/smashes/smash_glass.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "smash_success",
-        "variant" : "f_counter",
-        "volume" : 100,
+        "volume" : 50,
+        "variants" : [
+            "t_window_frame"
+        ],
         "files" : [
-            "env/smashes/smash_door_wooden.wav"
+            "env/smashes/smash_glass_fragments.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "smash_fail",
-        "variant" : "t_concrete_wall",
+        "volume" : 50,
+        "variants" : [
+            "t_window_frame"
+        ],
+        "files" : [
+            "env/smashes/smash_glass_fragments.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "smash_fail",
+        "volume" : 80,
+        "variants" : [
+            "f_locker",
+            "f_oven",
+            "f_trashcan",
+            "f_exercise",
+            "f_ball_mach",
+            "f_fridge",
+            "f_glass_fridge",
+            "f_rack",
+            "f_washer",
+            "f_dryer",
+            "f_bigmirror_b",
+            "f_vending_o",
+            "f_dumpster",
+            "f_dive_block",
+            "f_safe_c",
+            "f_safe_l",
+            "f_gunsafe_ml",
+            "f_gunsafe_mj",
+            "f_gun_safe_el",
+            "f_safe_o",
+            "f_arcade_machine",
+            "f_pinball_machine",
+            "f_ergometer",
+            "f_treadmill",
+            "f_standing_tank",
+            "t_reb_cage",
+            "t_ov_smreb_cage",
+            "t_ov_reb_cage",
+            "t_wall_metal",
+            "t_bars",
+            "t_mdoor_frame",
+            "t_window_bars_alarm"
+        ],
+        "files" : [
+            "env/smashes/hit_door_metal.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "smash_success",
+        "volume" : 100,
+        "variants" : [
+            "f_locker",
+            "f_oven",
+            "f_trashcan",
+            "f_exercise",
+            "f_ball_mach",
+            "f_fridge",
+            "f_glass_fridge",
+            "f_rack",
+            "f_washer",
+            "f_dryer",
+            "f_bigmirror_b",
+            "f_vending_o",
+            "f_dumpster",
+            "f_dive_block",
+            "f_safe_c",
+            "f_safe_l",
+            "f_gunsafe_ml",
+            "f_gunsafe_mj",
+            "f_gun_safe_el",
+            "f_safe_o",
+            "f_arcade_machine",
+            "f_pinball_machine",
+            "f_ergometer",
+            "f_treadmill",
+            "f_standing_tank",
+            "t_reb_cage",
+            "t_ov_smreb_cage",
+            "t_ov_reb_cage",
+            "t_wall_metal",
+            "t_bars",
+            "t_mdoor_frame",
+            "t_window_bars_alarm"
+        ],
+        "files" : [
+            "env/smashes/smash_door_metal.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "smash_fail",
+        "volume" : 80,
+        "variants" : [
+            "f_canvas_wall",
+            "f_large_canvas_wall",
+            "f_canvas_door",
+            "f_canvas_door_o",
+            "f_large_canvas_door",
+            "f_large_canvas_door_o",
+            "f_groundsheet",
+            "f_large_groundsheet",
+            "f_center_groundsheet",
+            "f_fema_groundsheet",
+            "f_skin_wall",
+            "f_skin_door",
+            "f_skin_door_o",
+            "f_skin_groundsheet"
+        ],
+        "files" : [
+            "env/smashes/hit_cloth.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "smash_success",
+        "volume" : 100,
+        "variants" : [
+            "f_canvas_wall",
+            "f_large_canvas_wall",
+            "f_canvas_door",
+            "f_canvas_door_o",
+            "f_large_canvas_door",
+            "f_large_canvas_door_o",
+            "f_groundsheet",
+            "f_large_groundsheet",
+            "f_center_groundsheet",
+            "f_fema_groundsheet",
+            "f_skin_wall",
+            "f_skin_door",
+            "f_skin_door_o",
+            "f_skin_groundsheet"
+        ],
+        "files" : [
+            "env/smashes/smash_cloth.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "smash_fail",
+        "volume" : 100,
+        "variants" : [
+            "t_door_c",
+            "t_door_b",
+            "f_bench",
+            "f_counter",
+            "f_bulletin",
+            "f_bed",
+            "f_makeshift_bed",
+            "f_woodstove",
+            "f_chair",
+            "f_armchair",
+            "f_sofa",
+            "f_cupboard",
+            "f_desk",
+            "f_lane",
+            "f_table",
+            "f_sign",
+            "f_pool_table",
+            "f_counter",
+            "f_dresser",
+            "f_bookcase",
+            "f_crate_c",
+            "f_crate_o",
+            "f_fvat_empty",
+            "f_fvat_full",
+            "t_wall_log_half",
+            "t_wall_log",
+            "t_wall_log_chipped",
+            "t_wall_log_broken",
+            "t_palisade",
+            "t_palisade_gate",
+            "t_palisade_gate_o",
+            "t_wall_half",
+            "t_wall_wood",
+            "t_wall_wood_chipped",
+            "t_wall_wood_broken",
+            "t_door_c_peep",
+            "t_door_b_peep",
+            "t_door_o",
+            "t_door_o_peep",
+            "t_rdoor_c",
+            "t_rdoor_b",
+            "t_rdoor_o",
+            "t_door_locked_interior",
+            "t_door_locked",
+            "t_door_locked_peep",
+            "t_door_locked_alarm",
+            "t_door_frame",
+            "t_door_boarded",
+            "f_wood_keg"
+        ],
+        "files" : [
+            "env/smashes/hit_door_wooden.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "smash_success",
+        "volume" : 100,
+        "variants" : [
+            "t_door_c",
+            "t_door_b",
+            "f_bench",
+            "f_counter",
+            "f_bulletin",
+            "f_bed",
+            "f_makeshift_bed",
+            "f_woodstove",
+            "f_chair",
+            "f_armchair",
+            "f_sofa",
+            "f_cupboard",
+            "f_desk",
+            "f_lane",
+            "f_table",
+            "f_sign",
+            "f_pool_table",
+            "f_counter",
+            "f_dresser",
+            "f_bookcase",
+            "f_crate_c",
+            "f_crate_o",
+            "f_fvat_empty",
+            "f_fvat_full",
+            "t_wall_log_half",
+            "t_wall_log",
+            "t_wall_log_chipped",
+            "t_wall_log_broken",
+            "t_palisade",
+            "t_palisade_gate",
+            "t_palisade_gate_o",
+            "t_wall_half",
+            "t_wall_wood",
+            "t_wall_wood_chipped",
+            "t_wall_wood_broken",
+            "t_door_c_peep",
+            "t_door_b_peep",
+            "t_door_o",
+            "t_door_o_peep",
+            "t_rdoor_c",
+            "t_rdoor_b",
+            "t_rdoor_o",
+            "t_door_locked_interior",
+            "t_door_locked",
+            "t_door_locked_peep",
+            "t_door_locked_alarm",
+            "t_door_frame",
+            "t_door_boarded",
+            "f_wood_keg"
+        ],
+        "files" : [
+            "env/smashes/smash_door_wooden.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "smash_fail",
         "volume" : 30,
+        "variants" : [
+            "default",
+            "t_concrete_wall",
+            "t_wall",
+            "f_fireplace",
+            "f_tub",
+            "f_shower",
+            "f_toilet",
+            "t_brick_wall_halfway",
+            "t_sconc_wall",
+            "t_brick_wall",
+            "t_sconc_wall_halfway",
+            "t_strconc_wall",
+            "t_strconc_wall_halfway",
+            "t_thconc_floor",
+            "t_strconc_floor",
+            "t_strconc_floor_halfway",
+            "f_sink"
+        ],
         "files" : [
-            "env/smashes/hit_rock.wav"
+            "env/smashes/hit_rock.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "smash_success",
-        "variant" : "t_concrete_wall",
         "volume" : 30,
+        "variants" : [
+            "default",
+            "t_concrete_wall",
+            "t_wall",
+            "f_fireplace",
+            "f_tub",
+            "f_shower",
+            "f_toilet",
+            "t_brick_wall_halfway",
+            "t_sconc_wall",
+            "t_brick_wall",
+            "t_sconc_wall_halfway",
+            "t_strconc_wall",
+            "t_strconc_wall_halfway",
+            "t_thconc_floor",
+            "t_strconc_floor",
+            "t_strconc_floor_halfway",
+            "f_sink"
+        ],
         "files" : [
-            "env/smashes/smash_rock.wav"
+            "env/smashes/smash_rock.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "smash_fail",
-        "variant" : "t_wall",
-        "volume" : 30,
+        "volume" : 50,
+        "variants" : [
+            "t_chainfence_v",
+            "t_chainfence_h",
+            "t_fence_barbed",
+            "t_chaingate_l",
+            "t_fencegate_c",
+            "t_fencegate_o",
+            "t_chaingate_c",
+            "t_chaingate_o",
+            "f_barricade_road"
+        ],
         "files" : [
-            "env/smashes/hit_rock.wav"
+            "env/smashes/hit_chainfence_1.ogg",
+            "env/smashes/hit_chainfence_2.ogg",
+            "env/smashes/hit_chainfence_3.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "smash_success",
-        "variant" : "t_wall",
-        "volume" : 30,
-        "files" : [
-            "env/smashes/smash_rock.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "smash_fail",
-        "variant" : "t_chainfence_v",
         "volume" : 50,
+        "variants" : [
+            "t_chainfence_v",
+            "t_chainfence_h",
+            "t_fence_barbed",
+            "t_chaingate_l",
+            "t_fencegate_c",
+            "t_fencegate_o",
+            "t_chaingate_c",
+            "t_chaingate_o",
+            "f_barricade_road"
+        ],
         "files" : [
-            "env/smashes/hit_chainfence_1.wav",
-            "env/smashes/hit_chainfence_2.wav",
-            "env/smashes/hit_chainfence_3.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "smash_fail",
-        "variant" : "t_chainfence_h",
-        "volume" : 50,
-        "files" : [
-            "env/smashes/hit_chainfence_1.wav",
-            "env/smashes/hit_chainfence_2.wav",
-            "env/smashes/hit_chainfence_3.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "smash_fail",
-        "variant" : "t_fence_barbed",
-        "volume" : 50,
-        "files" : [
-            "env/smashes/hit_chainfence_1.wav",
-            "env/smashes/hit_chainfence_2.wav",
-            "env/smashes/hit_chainfence_3.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "smash_success",
-        "variant" : "t_chainfence_v",
-        "volume" : 50,
-        "files" : [
-            "env/smashes/smash_chainfence_1.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "smash_success",
-        "variant" : "t_chainfence_h",
-        "volume" : 50,
-        "files" : [
-            "env/smashes/smash_chainfence_1.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "smash_success",
-        "variant" : "t_fence_barbed",
-        "volume" : 50,
-        "files" : [
-            "env/smashes/smash_chainfence_1.wav"
+            "env/smashes/smash_chainfence_1.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "explosion",
-        "variant" : "default",
         "volume" : 85,
+        "variants" : [
+            "default",
+            "small"
+        ],
         "files" : [
-            "env/explosions/explosion_small.wav"
+            "env/explosions/explosion_small.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "explosion",
-        "variant" : "small",
-        "volume" : 85,
-        "files" : [
-            "env/explosions/explosion_small.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "explosion",
-        "variant" : "huge",
         "volume" : 100,
+        "variants" : [
+            "huge"
+        ],
         "files" : [
-            "env/explosions/explosion_large.wav"
+            "env/explosions/explosion_large.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "environment",
-        "variant" : "thunder_far",
         "volume" : 75,
+        "variants" : [
+            "thunder_far"
+        ],
         "files" : [
-            "env/ambience_and_weather/thunder_far.wav"
+            "env/ambience_and_weather/thunder_far.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "environment",
-        "variant" : "thunder_near",
         "volume" : 95,
+        "variants" : [
+            "thunder_near"
+        ],
         "files" : [
-            "env/ambience_and_weather/thunder_near.wav"
+            "env/ambience_and_weather/thunder_near.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "environment",
-        "variant" : "WEATHER_FLURRIES",
         "volume" : 100,
+        "variants" : [
+            "WEATHER_FLURRIES"
+        ],
         "files" : [
-            "env/ambience_and_weather/flurries.wav"
+            "env/ambience_and_weather/flurries.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "environment",
-        "variant" : "WEATHER_RAINY",
         "volume" : 80,
+        "variants" : [
+            "WEATHER_RAINY"
+        ],
         "files" : [
-            "env/ambience_and_weather/rain.wav"
+            "env/ambience_and_weather/rain.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "environment",
-        "variant" : "indoors_rain",
         "volume" : 90,
+        "variants" : [
+            "indoors_rain"
+        ],
         "files" : [
-            "env/ambience_and_weather/indoors_rain.wav"
+            "env/ambience_and_weather/indoors_rain.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "environment",
-        "variant" : "WEATHER_SNOW",
         "volume" : 100,
+        "variants" : [
+            "WEATHER_SNOW"
+        ],
         "files" : [
-            "env/ambience_and_weather/snow.wav"
+            "env/ambience_and_weather/snow.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "environment",
-        "variant" : "WEATHER_THUNDER",
         "volume" : 90,
+        "variants" : [
+            "WEATHER_THUNDER"
+        ],
         "files" : [
-            "env/ambience_and_weather/thunderstorm.wav"
+            "env/ambience_and_weather/thunderstorm.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "environment",
-        "variant" : "WEATHER_DRIZZLE",
-        "volume" : 70,
-        "files" : [
-            "env/ambience_and_weather/drizzle.wav"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "environment",
-        "variant" : "daytime",
         "volume" : 85,
+        "variants" : [
+            "WEATHER_DRIZZLE"
+        ],
         "files" : [
-            "env/ambience_and_weather/daytime.wav"
+            "env/ambience_and_weather/drizzle.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "environment",
-        "variant" : "nighttime",
         "volume" : 85,
+        "variants" : [
+            "daytime"
+        ],
         "files" : [
-            "env/ambience_and_weather/nighttime.wav"
+            "env/ambience_and_weather/daytime.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "environment",
-        "variant" : "indoors",
-        "volume" : 100,
+        "volume" : 85,
+        "variants" : [
+            "nighttime"
+        ],
         "files" : [
-            "env/ambience_and_weather/indoors.wav"
+            "env/ambience_and_weather/nighttime.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "environment",
-        "variant" : "underground",
-        "volume" : 100,
+        "volume" : 30,
+        "variants" : [
+            "indoors"
+        ],
         "files" : [
-            "env/ambience_and_weather/underground.wav"
+            "env/ambience_and_weather/indoors.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "environment",
-        "variant" : "alarm",
-        "volume" : 100,
+        "volume" : 80,
+        "variants" : [
+            "underground"
+        ],
         "files" : [
-            "env/other/security_alarm.wav"
+            "env/ambience_and_weather/underground.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "environment",
-        "variant" : "deafness_shock",
         "volume" : 100,
+        "variants" : [
+            "alarm"
+        ],
         "files" : [
-            "env/deafness/deafness_shock.wav"
+            "env/other/security_alarm.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "environment",
-        "variant" : "deafness_tone_start",
         "volume" : 100,
+        "variants" : [
+            "deafness_shock"
+        ],
         "files" : [
-            "env/deafness/deafness_tone_start.wav"
+            "env/deafness/deafness_shock.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "environment",
-        "variant" : "deafness_tone_light",
         "volume" : 100,
+        "variants" : [
+            "deafness_tone_start"
+        ],
         "files" : [
-            "env/deafness/deafness_tone_light.wav"
+            "env/deafness/deafness_tone_start.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "environment",
-        "variant" : "deafness_tone_medium",
         "volume" : 100,
+        "variants" : [
+            "deafness_tone_light"
+        ],
         "files" : [
-            "env/deafness/deafness_tone_medium.wav"
+            "env/deafness/deafness_tone_light.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "environment",
-        "variant" : "deafness_tone_heavy",
         "volume" : 100,
+        "variants" : [
+            "deafness_tone_medium"
+        ],
         "files" : [
-            "env/deafness/deafness_tone_heavy.wav"
+            "env/deafness/deafness_tone_medium.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "environment",
+        "volume" : 100,
+        "variants" : [
+            "deafness_tone_heavy"
+        ],
+        "files" : [
+            "env/deafness/deafness_tone_heavy.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
-        "variant" : "brass_eject",
         "volume" : 100,
+        "variants" : [
+            "brass_eject"
+        ],
         "files" : [
-            "guns/misc_generic/brass_falling_1.wav",
-            "guns/misc_generic/brass_falling_2.wav",
-            "guns/misc_generic/brass_falling_3.wav",
-            "guns/misc_generic/brass_falling_4.wav"
+            "guns/misc_generic/brass_falling_1.ogg",
+            "guns/misc_generic/brass_falling_2.ogg",
+            "guns/misc_generic/brass_falling_3.ogg",
+            "guns/misc_generic/brass_falling_4.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "bullet_hit",
-        "variant" : "hit_flesh",
         "volume" : 30,
+        "variants" : [
+            "hit_flesh"
+        ],
         "files" : [
-            "guns/misc_generic/hit_flesh_1.wav",
-            "guns/misc_generic/hit_flesh_2.wav",
-            "guns/misc_generic/hit_flesh_3.wav"
+            "guns/misc_generic/hit_flesh_1.ogg",
+            "guns/misc_generic/hit_flesh_2.ogg",
+            "guns/misc_generic/hit_flesh_3.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "bullet_hit",
-        "variant" : "hit_wall",
         "volume" : 50,
+        "variants" : [
+            "hit_wall"
+        ],
         "files" : [
-            "guns/misc_generic/hit_wall_1.wav",
-            "guns/misc_generic/hit_wall_2.wav",
-            "guns/misc_generic/hit_wall_3.wav"
+            "guns/misc_generic/hit_wall_1.ogg",
+            "guns/misc_generic/hit_wall_2.ogg",
+            "guns/misc_generic/hit_wall_3.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "bullet_hit",
-        "variant" : "hit_metal",
         "volume" : 50,
+        "variants" : [
+            "hit_metal"
+        ],
         "files" : [
-            "guns/misc_generic/hit_metal_1.wav",
-            "guns/misc_generic/hit_metal_2.wav",
-            "guns/misc_generic/hit_metal_3.wav"
+            "guns/misc_generic/hit_metal_1.ogg",
+            "guns/misc_generic/hit_metal_2.ogg",
+            "guns/misc_generic/hit_metal_3.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "mon_death",
-        "variant" : "zombie_death",
         "volume" : 50,
+        "variants" : [
+            "zombie_death"
+        ],
         "files" : [
-            "monster/zombie_death_1.wav",
-            "monster/zombie_death_2.wav",
-            "monster/zombie_death_3.wav",
-            "monster/zombie_death_4.wav"
+            "monster/zombie_death_1.ogg",
+            "monster/zombie_death_2.ogg",
+            "monster/zombie_death_3.ogg",
+            "monster/zombie_death_4.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "mon_bite",
-        "variant" : "bite_miss",
         "volume" : 50,
+        "variants" : [
+            "bite_miss"
+        ],
         "files" : [
-            "monster/bite_miss_1.wav",
-            "monster/bite_miss_2.wav",
-            "monster/bite_miss_3.wav",
-            "monster/bite_miss_4.wav"
+            "monster/bite_miss_1.ogg",
+            "monster/bite_miss_2.ogg",
+            "monster/bite_miss_3.ogg",
+            "monster/bite_miss_4.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "mon_bite",
-        "variant" : "bite_hit",
         "volume" : 60,
+        "variants" : [
+            "bite_hit"
+        ],
         "files" : [
-            "monster/bite_hit_1.wav",
-            "monster/bite_hit_2.wav",
-            "monster/bite_hit_3.wav",
-            "monster/bite_hit_4.wav"
+            "monster/bite_hit_1.ogg",
+            "monster/bite_hit_2.ogg",
+            "monster/bite_hit_3.ogg",
+            "monster/bite_hit_4.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "mon_death",
-        "variant" : "zombie_gibbed",
         "volume" : 80,
+        "variants" : [
+            "zombie_gibbed"
+        ],
         "files" : [
-            "monster/zombie_gibbed.wav"
+            "monster/zombie_gibbed.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "deal_damage",
-        "variant" : "hurt_f",
         "volume" : 50,
+        "variants" : [
+            "hurt_f"
+        ],
         "files" : [
-            "player/hurt_f/hurt_1.wav",
-            "player/hurt_f/hurt_2.wav",
-            "player/hurt_f/hurt_3.wav",
-            "player/hurt_f/hurt_4.wav"
+            "player/hurt_f/hurt_1.ogg",
+            "player/hurt_f/hurt_2.ogg",
+            "player/hurt_f/hurt_3.ogg",
+            "player/hurt_f/hurt_4.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "deal_damage",
-        "variant" : "hurt_m",
         "volume" : 50,
+        "variants" : [
+            "hurt_m"
+        ],
         "files" : [
-            "player/hurt_m/hurt_1.wav",
-            "player/hurt_m/hurt_2.wav",
-            "player/hurt_m/hurt_3.wav",
-            "player/hurt_m/hurt_4.wav"
+            "player/hurt_m/hurt_1.ogg",
+            "player/hurt_m/hurt_2.ogg",
+            "player/hurt_m/hurt_3.ogg",
+            "player/hurt_m/hurt_4.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "melee_attack",
-        "variant" : "monster_melee_hit",
         "volume" : 50,
+        "variants" : [
+            "monster_melee_hit"
+        ],
         "files" : [
-            "melee/generic/generic_melee_hit.wav"
+            "melee/generic/generic_melee_hit.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "plmove",
-        "variant" : "fatigue_m_high",
         "volume" : 60,
+        "variants" : [
+            "fatigue_m_high"
+        ],
         "files" : [
-            "player/fatigue_m/fatigue_high.wav"
+            "player/fatigue_m/fatigue_high.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "plmove",
-        "variant" : "fatigue_m_med",
         "volume" : 60,
+        "variants" : [
+            "fatigue_m_med"
+        ],
         "files" : [
-            "player/fatigue_m/fatigue_med.wav"
+            "player/fatigue_m/fatigue_med.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "plmove",
-        "variant" : "fatigue_m_low",
         "volume" : 50,
+        "variants" : [
+            "fatigue_m_low"
+        ],
         "files" : [
-            "player/fatigue_m/fatigue_low.wav"
+            "player/fatigue_m/fatigue_low.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "plmove",
-        "variant" : "fatigue_f_high",
         "volume" : 60,
+        "variants" : [
+            "fatigue_f_high"
+        ],
         "files" : [
-            "player/fatigue_f/fatigue_high.wav"
+            "player/fatigue_f/fatigue_high.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "plmove",
-        "variant" : "fatigue_f_med",
         "volume" : 60,
+        "variants" : [
+            "fatigue_f_med"
+        ],
         "files" : [
-            "player/fatigue_f/fatigue_med.wav"
+            "player/fatigue_f/fatigue_med.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "plmove",
-        "variant" : "fatigue_f_low",
         "volume" : 60,
+        "variants" : [
+            "fatigue_f_low"
+        ],
         "files" : [
-            "player/fatigue_f/fatigue_low.wav"
+            "player/fatigue_f/fatigue_low.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "clean_up_at_end",
-        "variant" : "game_over",
         "volume" : 50,
+        "variants" : [
+            "game_over"
+        ],
         "files" : [
-            "misc/game_over/game_over_1.wav",
-            "misc/game_over/game_over_2.wav"
+            "misc/game_over/game_over_1.ogg",
+            "misc/game_over/game_over_2.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "clean_up_at_end",
-        "variant" : "death_m",
         "volume" : 60,
+        "variants" : [
+            "death_m"
+        ],
         "files" : [
-            "player/death_m/death_1.wav",
-            "player/death_m/death_2.wav",
-            "player/death_m/death_3.wav"
+            "player/death_m/death_1.ogg",
+            "player/death_m/death_2.ogg",
+            "player/death_m/death_3.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "clean_up_at_end",
-        "variant" : "death_f",
         "volume" : 60,
+        "variants" : [
+            "death_f"
+        ],
         "files" : [
-            "player/death_f/death_1.wav",
-            "player/death_f/death_2.wav"
+            "player/death_f/death_1.ogg",
+            "player/death_f/death_2.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "danger_low",
-        "variant" : "default",
         "volume" : 90,
+        "variants" : [
+            "default"
+        ],
         "files" : [
-            "music/danger_theme/danger_low.wav"
+            "music/danger_theme/danger_low.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "danger_medium",
-        "variant" : "default",
         "volume" : 90,
+        "variants" : [
+            "default"
+        ],
         "files" : [
-            "music/danger_theme/danger_medium.wav"
+            "music/danger_theme/danger_medium.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "danger_high",
-        "variant" : "default",
         "volume" : 90,
+        "variants" : [
+            "default"
+        ],
         "files" : [
-            "music/danger_theme/danger_high.wav"
+            "music/danger_theme/danger_high.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "danger_extreme",
-        "variant" : "default",
         "volume" : 90,
+        "variants" : [
+            "default"
+        ],
         "files" : [
-            "music/danger_theme/danger_extreme.wav"
+            "music/danger_theme/danger_extreme.ogg"
         ]
     },
     {
         "type": "sound_effect",
         "id" : "fire_gun",
-        "variant" : "bio_lightning_tail",
         "volume" : 85,
+        "variants" : [
+            "bio_lightning_tail"
+        ],
         "files" : [
-            "guns/energy_generic/weapon_fire_lightning_tail.wav"
+            "guns/energy_generic/weapon_fire_lightning_tail.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "vehicle",
+        "volume" : 95,
+        "variants" : [
+            "vehicle_open_door"
+        ],
+        "files" : [
+            "vehicle/vehicle_door_open_1.ogg",
+            "vehicle/vehicle_door_open_2.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "vehicle",
+        "volume" : 95,
+        "variants" : [
+            "vehicle_close_door"
+        ],
+        "files" : [
+            "vehicle/vehicle_door_close_1.ogg",
+            "vehicle/vehicle_door_close_2.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "vehicle",
+        "volume" : 85,
+        "variants" : [
+            "vehicle_door_alarm"
+        ],
+        "files" : [
+            "vehicle/vehicle_door_alarm_1.ogg",
+            "vehicle/vehicle_door_alarm_2.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "vehicle",
+        "volume" : 95,
+        "variants" : [
+            "engine_start_interior"
+        ],
+        "files" : [
+            "vehicle/engine_start_interior_1.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "vehicle",
+        "volume" : 95,
+        "variants" : [
+            "engine_stall"
+        ],
+        "files" : [
+            "vehicle/engine_stall_1.ogg",
+            "vehicle/engine_stall_2.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "vehicle",
+        "volume" : 95,
+        "variants" : [
+            "engine_stop_interior"
+        ],
+        "files" : [
+            "vehicle/engine_stop_interior_1.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "vehicle",
+        "volume" : 100,
+        "variants" : [
+            "engine_speed_loop"
+        ],
+        "files" : [
+            "vehicle/engine_speed_loop_1.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "vehicle",
+        "volume" : 95,
+        "variants" : [
+            "engine_idle_loop_1"
+        ],
+        "files" : [
+            "vehicle/engine_idle_loop_1.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "vehicle",
+        "volume" : 75,
+        "variants" : [
+            "gear_shift"
+        ],
+        "files" : [
+            "vehicle/gear_shift_1.ogg",
+            "vehicle/gear_shift_2.ogg",
+            "vehicle/gear_shift_3.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "vehicle",
+        "volume" : 95,
+        "variants" : [
+            "stereo"
+        ],
+        "files" : [
+            "music/radio/one_more_kiss_dear.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "vehicle",
+        "volume" : 90,
+        "variants" : [
+            "door_alarm"
+        ],
+        "files" : [
+            "vehicle/vehicle_door_alarm_1.ogg"
         ]
     }
 ]

@@ -4,6 +4,7 @@
 #include "calendar.h"
 #include "tileray.h"
 #include "color.h"
+#include "damage.h"
 #include "item.h"
 #include "line.h"
 #include "item_stack.h"
@@ -83,7 +84,7 @@ struct veh_collision {
     void         *target      = nullptr;  //vehicle
     int           target_part = 0; //veh partnum
     std::string   target_name;
- 
+
     veh_collision() = default;
 };
 
@@ -153,7 +154,7 @@ public:
     // Coordinates for some kind of target; jumper cables and turrets use this
     // Two coord pairs are stored: actual target point, and target vehicle center.
     // Both cases use absolute coordinates (relative to world origin)
-    std::pair<tripoint, tripoint> target;  
+    std::pair<tripoint, tripoint> target;
 private:
     std::list<item> items; // inventory
 public:
@@ -285,7 +286,7 @@ private:
 
     // direct damage to part (armor protection and internals are not counted)
     // returns damage bypassed
-    int damage_direct (int p, int dmg, int type = 1);
+    int damage_direct( int p, int dmg, damage_type type = DT_TRUE );
     //damages vehicle controls and security system
     void smash_security_system();
     // get vpart powerinfo for part number, accounting for variable-sized parts and hps.
@@ -353,7 +354,6 @@ public:
     void smash();
 
     // load and init vehicle data from stream. This implies valid save data!
-    void load_legacy(std::ifstream &stin);
     void load (std::ifstream &stin);
 
     // Save vehicle data to stream
@@ -381,7 +381,7 @@ public:
 
     // Honk the vehicle's horn, if there are any
     void honk_horn();
-
+    void beeper_sound();
     void play_music();
 
     // get vpart type info for part number (part at given vector index)
@@ -674,18 +674,14 @@ public:
 
     void unboard_all ();
 
-    // damage types:
-    // 0 - piercing
-    // 1 - bashing (damage applied if it passes certain treshold)
-    // 2 - incendiary
-    // damage individual part. bash means damage
+    // Damage individual part. bash means damage
     // must exceed certain threshold to be substracted from hp
     // (a lot light collisions will not destroy parts)
-    // returns damage bypassed
-    int damage (int p, int dmg, int type = 1, bool aimed = true);
+    // Returns damage bypassed
+    int damage (int p, int dmg, damage_type type = DT_BASH, bool aimed = true);
 
     // damage all parts (like shake from strong collision), range from dmg1 to dmg2
-    void damage_all (int dmg1, int dmg2, int type, const point &impact);
+    void damage_all (int dmg1, int dmg2, damage_type type, const point &impact);
 
     //Shifts the coordinates of all parts and moves the vehicle in the opposite direction.
     void shift_parts( point delta );
@@ -713,7 +709,7 @@ public:
     turret_fire_ability turret_can_shoot( const int p, const tripoint &pos );
 
     // Cycle mode for this turret
-    // If `from_controls` is false, only manual modes are allowed 
+    // If `from_controls` is false, only manual modes are allowed
     // and message describing the new mode is printed
     void cycle_turret_mode( int p, bool from_controls );
 
@@ -732,7 +728,7 @@ public:
     // Manual turret fire - gives the `shooter` a temporary weapon, makes them use it,
     // then gives back the weapon held before (if any).
     // TODO: Make it work correctly with UPS-powered turrets when player has a UPS already
-    bool manual_fire_turret( int p, player &shooter, const itype &guntype, 
+    bool manual_fire_turret( int p, player &shooter, const itype &guntype,
                              const itype &ammotype, long &charges );
 
     // Update the set of occupied points and return a reference to it
@@ -864,16 +860,19 @@ public:
     tileray face;       // frame direction
     tileray move;       // direction we are moving
     int velocity = 0;       // vehicle current velocity, mph * 100
-    int cruise_velocity = 0; // velocity vehicle's cruise control trying to acheive
+    int cruise_velocity = 0; // velocity vehicle's cruise control trying to achieve
     std::string music_id;    // what music storage device is in the stereo
     int om_id;          // id of the om_vehicle struct corresponding to this vehicle
-    int turn_dir;       // direction, to wich vehicle is turning (player control). will rotate frame on next move
+    int turn_dir;       // direction, to which vehicle is turning (player control). will rotate frame on next move
 
     int last_turn = 0;      // amount of last turning (for calculate skidding due to handbrake)
-    //int moves;
     float of_turn;      // goes from ~1 to ~0 while proceeding every turn
     float of_turn_carry;// leftover from prev. turn
     int turret_mode = 0;    // turret firing mode: 0 = off, 1 = burst fire
+
+    signed int door_sfx_channel = -1; //holds channel number for open door chime sound effects
+    signed int exterior_engine_sfx_channel = -1; //holds channel number for exterior engine sound effects
+    signed int stereo_sfx_channel = -1; //holds channel number for stereo sound effects
 
     int lights_epower       = 0; // total power of components with LIGHT or CONE_LIGHT flag
     int overhead_epower     = 0; // total power of components with CIRCLE_LIGHT flag

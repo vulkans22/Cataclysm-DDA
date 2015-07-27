@@ -21,6 +21,9 @@
 #include "coordinates.h"
 #include "npc.h"
 #include "vehicle.h"
+#include "submap.h"
+#include "monster.h"
+#include "overmap.h"
 
 #include <fstream>
 #include <sstream>
@@ -111,7 +114,7 @@ void edit_json( SAVEOBJ *it )
             try {
                 SAVEOBJ tmp;
                 tmp.deserialize( dump );
-                *it = tmp;
+                *it = std::move( tmp );
             } catch( std::string &err ) {
                 popup( "Error on deserialization: %s", err.c_str() );
             }

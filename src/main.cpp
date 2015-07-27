@@ -25,6 +25,7 @@
 #include "translations.h"
 #if (defined OSX_SDL_FW)
 #include "SDL.h"
+#include "audiere.h"
 #elif (defined OSX_SDL_LIBS)
 #include "SDL/SDL.h"
 #endif

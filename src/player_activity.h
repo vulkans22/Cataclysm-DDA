@@ -7,7 +7,7 @@
 #include <climits>
 #include <vector>
 
-enum activity_type {    // expanded this enum for readability
+enum activity_type : int {    // expanded this enum for readability
     ACT_NULL = 0,
     ACT_RELOAD,
     ACT_READ,
@@ -108,8 +108,6 @@ class player_activity : public JsonSerializer, public JsonDeserializer
         void serialize(JsonOut &jsout) const override;
         using JsonDeserializer::deserialize;
         void deserialize(JsonIn &jsin) override;
-
-        void load_legacy(std::stringstream &dump);
 
         /**
          * Performs the activity for a single turn. If the activity is complete

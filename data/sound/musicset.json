@@ -1,15 +1,12 @@
 {
-    "playlists" : [
+    "playlists" :
+    	[
         {
             "id" : "title",
-            "shuffle" : false,
+            "shuffle" : true,
             "files" : [
                 {
-                    "file": "Dark_Days_Ahead_demo_2.wav",
-                    "volume": 128
-                },
-                {
-                    "file": "cataclysmthemeREV6.wav",
+                    "file": "music/none.mp3",
                     "volume": 90
                 }
             ]

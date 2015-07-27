@@ -19,6 +19,7 @@
 #include "path_info.h"
 #include "filesystem.h"
 #include "map.h"
+#include "game.h"
 #include "lightmap.h"
 
 //TODO replace these includes with filesystem.h
@@ -44,7 +45,6 @@
 #ifdef SDLTILES
 #include "SDL2/SDL_image.h"
 #endif
-
 #ifdef SDL_SOUND
 #include "SDL2/SDL_mixer.h"
 #endif
@@ -58,12 +58,11 @@
 #ifdef SDLTILES
 cata_tiles *tilecontext;
 static unsigned long lastupdate = 0;
-static unsigned long interval = 25;
+static unsigned long interval = 1;
 static bool needupdate = false;
 #endif
 
 #ifdef SDL_SOUND
-/** The music we're currently playing. */
 Mix_Music *current_music = NULL;
 std::string current_playlist = "";
 int current_playlist_at = 0;
@@ -190,6 +189,7 @@ static std::set<std::string> *bitmap_fonts;
 static std::vector<curseline> framebuffer;
 static WINDOW *winBuffer; //tracking last drawn window to fix the framebuffer
 static int fontScaleBuffer; //tracking zoom levels to fix framebuffer w/tiles
+//AudioDevicePtr device;
 
 #ifdef SDLTILES
 //***********************************
@@ -363,18 +363,17 @@ bool WinCreate()
         joystick = NULL;
     }
 
-    // Set up audio mixer.
 #ifdef SDL_SOUND
     int audio_rate = 44100;
     Uint16 audio_format = AUDIO_S16;
     int audio_channels = 2;
-    int audio_buffers = 2048;
+    int audio_buffers = 4096;
 
     if(Mix_OpenAudio(audio_rate, audio_format, audio_channels, audio_buffers)) {
         dbg( D_ERROR ) << "Failed to open audio mixer, sound won't work: " << Mix_GetError();
     }
-    Mix_AllocateChannels(128);
-    Mix_ReserveChannels(20);
+    Mix_AllocateChannels(64);
+    //Mix_ReserveChannels(14);
 #endif
 
     return true;
@@ -1454,7 +1453,7 @@ WINDOW *curses_init(void)
     init_colors();
 
     // initialize sound set
-    load_soundset();
+    //load_soundset();
 
     // Reset the font pointer
     font = Font::load_font(typeface, fontsize, fontwidth, fontheight);
@@ -2002,7 +2001,6 @@ void play_music_file(std::string filename, int volume) {
     Mix_HookMusicFinished(musicFinished);
 }
 
-/** Callback called when we finish playing music. */
 void musicFinished() {
     Mix_HaltMusic();
     Mix_FreeMusic(current_music);

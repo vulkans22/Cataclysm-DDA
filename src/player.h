@@ -4,7 +4,6 @@
 #include "character.h"
 #include "item.h"
 #include "player_activity.h"
-#include "clzones.h"
 #include "weighted_list.h"
 
 #include <unordered_set>
@@ -134,8 +133,6 @@ class player : public Character, public JsonSerializer, public JsonDeserializer
         /** Returns what color the player should be drawn as */
         virtual nc_color basic_symbol_color() const override;
 
-        /** Stringstream loader for old player data files */
-        virtual void load_legacy(std::stringstream &dump);
         /** Deserializes string data when loading files */
         virtual void load_info(std::string data);
         /** Outputs a serialized json string for saving */
@@ -159,10 +156,10 @@ class player : public Character, public JsonSerializer, public JsonDeserializer
         void disp_morale();
         /** Print the bars indicating how well the player is currently aiming.**/
         int print_aim_bars( WINDOW *w, int line_number, item *weapon, Creature *target);
-        /** Print just the gun mode indicator. **/
-        void print_gun_mode( WINDOW *w, nc_color c );
-        /** Print just the colored recoil indicator. **/
-        void print_recoil( WINDOW *w ) const;
+        /** Returns the gun mode indicator, ready to be printed, contains color-tags. **/
+        std::string print_gun_mode();
+        /** Returns the colored recoil indicator (contains color-tags). **/
+        std::string print_recoil() const;
         /** Displays indicator informing which turrets can fire at `targ`.**/
         int draw_turret_aim( WINDOW *w, int line_number, const tripoint &targ ) const;
 
@@ -328,6 +325,11 @@ class player : public Character, public JsonSerializer, public JsonDeserializer
          */
         std::vector<Creature*> get_visible_creatures( int range ) const;
         /**
+	 * As above, but includes all creatures the player can detect well enough to target
+	 * with ranged weapons, e.g. with infared vision.
+         */
+        std::vector<Creature*> get_targetable_creatures( int range ) const;
+        /**
          * Check whether the this player can see the other creature with infrared. This implies
          * this player can see infrared and the target is visible with infrared (is warm).
          * And of course a line of sight exists.
@@ -436,8 +438,11 @@ class player : public Character, public JsonSerializer, public JsonDeserializer
         void dodge_hit(Creature *source, int hit_spread) override;
         /** Checks for valid block abilities and reduces damage accordingly. Returns true if the player blocks */
         bool block_hit(Creature *source, body_part &bp_hit, damage_instance &dam) override;
-        /** Reduces and mutates du, prints messages about armor taking damage. */
-        void armor_absorb(damage_unit &du, item &armor);
+        /**
+         * Reduces and mutates du, prints messages about armor taking damage.
+         * @return true if the armor was completely destroyed (and the item must be deleted).
+         */
+        bool armor_absorb(damage_unit &du, item &armor);
         /** Runs through all bionics and armor on a part and reduces damage through their armor_absorb */
         void absorb_hit(body_part bp, damage_instance &dam) override;
         /** Handles dodged attacks (training dodge) and ma_ondodge */
@@ -488,6 +493,7 @@ class player : public Character, public JsonSerializer, public JsonDeserializer
         int get_dodge() const override;
         /** Returns the player's dodge_roll to be compared against an agressor's hit_roll() */
         int dodge_roll() override;
+        
         /** Returns melee skill level, to be used to throttle dodge practice. **/
         int get_melee() const override;
         /**
@@ -508,8 +514,16 @@ class player : public Character, public JsonSerializer, public JsonDeserializer
 
         /** Handles the uncanny dodge bionic and effects, returns true if the player successfully dodges */
         bool uncanny_dodge() override;
-        /** ReReturns an unoccupied, safe adjacent point. If none exists, returns player position. */
+        /** Returns an unoccupied, safe adjacent point. If none exists, returns player position. */
         tripoint adjacent_tile();
+
+        /**
+         * Checks both the neighborhoods of from and to for climbable surfaces,
+         * returns move cost of climbing from `from` to `to`.
+         * 0 means climbing is not possible.
+         * Return value can depend on the orientation of the terrain.
+         */
+        int climbing_cost( const tripoint &from, const tripoint &to ) const;
 
         // ranged.cpp
         /** Returns the throw range of the item at the entered inventory position. -1 = ERR, 0 = Can't throw */
@@ -618,7 +632,7 @@ class player : public Character, public JsonSerializer, public JsonDeserializer
         /** Wields an item, returns false on failed wield */
         virtual bool wield(item *it, bool autodrop = false);
         /** Creates the UI and handles player input for picking martial arts styles */
-        void pick_style();
+        bool pick_style();
         /** Wear item; returns false on fail. If interactive is false, don't alert the player or drain moves on completion. */
         bool wear(int pos, bool interactive = true);
         /** Wear item; returns false on fail. If interactive is false, don't alert the player or drain moves on completion. */
@@ -799,7 +813,7 @@ class player : public Character, public JsonSerializer, public JsonDeserializer
         int  leak_level( std::string flag ) const; // carried items may leak radiation or chemicals
 
         // Check for free container space for the whole liquid item
-        bool has_container_for(const item &liquid);
+        bool has_container_for(const item &liquid) const;
         // Has a weapon, inventory item or worn item with flag
         bool has_item_with_flag( std::string flag ) const;
         // Has amount (or more) items with at least the required quality level.
@@ -1041,13 +1055,6 @@ class player : public Character, public JsonSerializer, public JsonDeserializer
         void add_known_trap( const tripoint &pos, const trap &t );
         /** Search surrounding squares for traps (and maybe other things in the future). */
         void search_surroundings();
-
-        // zone related stuff
-        // (zones as in the zones designated by players)
-        clZones Zones;
-
-        bool save_zones();
-        void load_zones();
 
         // drawing related stuff
         /**

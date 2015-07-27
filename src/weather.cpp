@@ -8,7 +8,7 @@
 #include "trap.h"
 #include "math.h"
 #include "translations.h"
-#include "sounds.h"
+#include "sfx.h"
 
 #include <vector>
 #include <sstream>
@@ -19,7 +19,7 @@
  */
 
 #define PLAYER_OUTSIDE (g->m.is_outside(g->u.posx(), g->u.posy()) && g->get_levz() >= 0)
-#define THUNDER_CHANCE 50
+#define THUNDER_CHANCE 100
 #define LIGHTNING_CHANCE 600
 
 /**
@@ -362,13 +362,13 @@ void weather_effect::thunder()
     if (!g->u.is_deaf() && one_in(THUNDER_CHANCE)) {
         if (g->get_levz() >= 0) {
             add_msg(_("You hear a distant rumble of thunder."));
-            sfx::play_variant_sound("environment", "thunder_far", 80, rng(0, 359));
+            sfx::play_variant_sound("environment", "thunder_far", rng_float(0.2, 0.6), 0, rng_float(-1.0, 1.0));
         } else if (g->u.has_trait("GOODHEARING") && one_in(1 - 2 * g->get_levz())) {
             add_msg(_("You hear a rumble of thunder from above."));
-            sfx::play_variant_sound("environment", "thunder_far", 100, rng(0, 359));
+            sfx::play_variant_sound("environment", "thunder_far", rng_float(0.4, 0.8), 0, rng_float(-1.0, 1.0));
         } else if (!g->u.has_trait("BADHEARING") && one_in(1 - 3 * g->get_levz())) {
             add_msg(_("You hear a rumble of thunder from above."));
-            sfx::play_variant_sound("environment", "thunder_far", 60, rng(0, 359));
+            sfx::play_variant_sound("environment", "thunder_far", rng_float(0.6, 1.0), 0, rng_float(-1.0, 1.0));
         }
     }
 }
@@ -387,7 +387,7 @@ void weather_effect::lightning()
     if(one_in(LIGHTNING_CHANCE)) {
         if(g->get_levz() >= 0) {
             add_msg(_("A flash of lightning illuminates your surroundings!"));
-            sfx::play_variant_sound("environment", "thunder_near", 100, rng(0, 359));
+            sfx::play_variant_sound("environment", "thunder_near", rng_float(0.5, 1.0), 0, rng_float(-1.0, 1.0));
             g->lightning_active = true;
         }
     } else {

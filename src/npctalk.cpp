@@ -18,6 +18,7 @@
 #include "input.h"
 #include "item_group.h"
 #include "compatibility.h"
+#include "basecamp.h"
 
 #include <vector>
 #include <string>
@@ -3163,8 +3164,7 @@ void talk_function::stop_guard(npc *p)
 
 void talk_function::allow_sleep(npc *p)
 {
-    //add_msg(_("%s goes to sleep."), p->name.c_str());
-    p->add_effect( "allow_sleep", 1800 );
+    p->add_effect( "allow_sleep", 1, num_bp, true );
     p->chatbin.first_topic = "TALK_WAKE_UP";
 }
 

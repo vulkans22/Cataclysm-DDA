@@ -16,6 +16,8 @@
 #include "martialarts.h"
 #include "itype.h"
 #include "vehicle.h"
+#include "mapdata.h"
+#include "sfx.h"
 
 #include <sstream>
 
@@ -918,8 +920,6 @@ void activity_handlers::reload_finish( player_activity *act, player *p )
         if(reloadable->is_gun()) {
             islot_gun* gun = reloadable->type->gun.get();
             if( gun->reload_noise_volume > 0 ) {
-
-              sfx::play_variant_sound( "reload", reloadable->typeId(), sfx::get_heard_volume(p->pos()));
               sounds::sound( p->pos(), gun->reload_noise_volume, gun->reload_noise,
                              true, "", "" );
             }
@@ -1095,9 +1095,12 @@ void activity_handlers::start_engines_finish( player_activity *act, player *p )
         if( started == attempted ) {
             add_msg( ngettext("The %s's engine starts up.",
                 "The %s's engines start up.", not_muscle), veh->name.c_str() );
+                sfx::play_variant_sound( "vehicle", "engine_start_interior", sfx::get_heard_volume(veh->global_pos3()), 0, sfx::get_heard_angle(veh->global_pos3()));
+                sfx::do_vehicle_engine_sfx();
         } else {
             add_msg( m_bad, ngettext("The %s's engine fails to start.",
                 "The %s's engines fail to start.", not_muscle), veh->name.c_str() );
+                sfx::play_variant_sound( "vehicle", "engine_stall", sfx::get_heard_volume(veh->global_pos3()), 0, sfx::get_heard_angle(veh->global_pos3()));
         }
     }
 

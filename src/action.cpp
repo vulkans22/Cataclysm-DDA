@@ -5,6 +5,7 @@
 #include "debug.h"
 #include "game.h"
 #include "map.h"
+#include "player.h"
 #include "options.h"
 #include "messages.h"
 #include "translations.h"
@@ -13,6 +14,8 @@
 #include "ui.h"
 #include "trap.h"
 #include "itype.h"
+#include "mapdata.h"
+
 #include <istream>
 #include <sstream>
 #include <fstream>

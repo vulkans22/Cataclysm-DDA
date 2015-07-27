@@ -22,6 +22,9 @@
 #include "veh_type.h"
 #include "trap.h"
 #include "itype.h"
+#include "submap.h"
+#include "mapdata.h"
+#include "sfx.h"
 
 #include <fstream>
 #include <sstream>
@@ -270,17 +273,13 @@ void vehicle::load (std::ifstream &stin)
     getline(stin, type);
     this->type = vproto_id( type );
 
-    if ( type.size() > 1 && ( type[0] == '{' || type[1] == '{' ) ) {
-        std::stringstream derp;
-        derp << type;
-        JsonIn jsin(derp);
-        try {
-            deserialize(jsin);
-        } catch (std::string jsonerr) {
-            debugmsg("Bad vehicle json\n%s", jsonerr.c_str() );
-        }
-    } else {
-        load_legacy(stin);
+    std::stringstream derp;
+    derp << type;
+    JsonIn jsin(derp);
+    try {
+        deserialize(jsin);
+    } catch (std::string jsonerr) {
+        debugmsg("Bad vehicle json\n%s", jsonerr.c_str() );
     }
     refresh(); // part index lists are lost on save??
     shift_if_needed();
@@ -767,7 +766,7 @@ bool vehicle::interact_vehicle_locked()
     if (is_locked){
         const inventory &crafting_inv = g->u.crafting_inventory();
         add_msg(_("You don't find any keys in the %s."), name.c_str());
-        if( crafting_inv.has_items_with_quality( "SCREW_FINE", 1, 1 ) ) {
+        if( crafting_inv.has_items_with_quality( "SCREW", 1, 1 ) ) {
             if (query_yn(_("You don't find any keys in the %s. Attempt to hotwire vehicle?"),
                             name.c_str())) {
 
@@ -1080,6 +1079,7 @@ void vehicle::use_controls()
         if( ( stereo_on || fuel_left( fuel_type_battery, true ) ) ) {
             stereo_on = !stereo_on;
             add_msg( stereo_on ? _("Turned on music") : _("Turned off music") );
+            play_music();
         } else {
                 add_msg(_("The stereo won't come on!"));
         }
@@ -1150,6 +1150,7 @@ void vehicle::use_controls()
             //if we are controlling the vehicle, stop it.
             if (engine_on && has_engine_type_not(fuel_type_muscle, true)){
                 add_msg(_("You turn the engine off and let go of the controls."));
+                sfx::play_variant_sound( "vehicle", "engine_stop_interior", sfx::get_heard_volume(global_pos3()), 0, sfx::get_heard_angle(global_pos3()));
             } else {
                 add_msg(_("You let go of the controls."));
             }
@@ -1159,6 +1160,7 @@ void vehicle::use_controls()
         } else if (engine_on) {
             if (has_engine_type_not(fuel_type_muscle, true))
                 add_msg(_("You turn the engine off."));
+                sfx::play_variant_sound( "vehicle", "engine_stop_interior", sfx::get_heard_volume(global_pos3()), 0, sfx::get_heard_angle(global_pos3()));
             engine_on = false;
         } else {
             start_engines();
@@ -1436,6 +1438,31 @@ void vehicle::honk_horn()
     }
 }
 
+void vehicle::beeper_sound()
+{
+    // No power = no sound
+    if( fuel_left( fuel_type_battery, true ) == 0 ) {
+        return;
+    }
+
+    const bool odd_turn = (calendar::turn % 2 == 0);
+    for( size_t p = 0; p < parts.size(); ++p ) {
+        if( !part_flag( p, "BEEPER" ) ) {
+            continue;
+        }
+        if( ( odd_turn && part_flag( p, VPFLAG_EVENTURN ) ) ||
+            ( !odd_turn && part_flag( p, VPFLAG_ODDTURN ) ) ) {
+            continue;
+        }
+
+        const vpart_info &beeper_type = part_info( p );
+        //Get global position of backup beeper
+        const tripoint beeper_pos = global_pos3() + parts[p].precalc[0];
+        //Determine sound
+        sounds::sound( beeper_pos, beeper_type.bonus, _("beep!") );
+    }
+}
+
 void vehicle::play_music()
 {
     for( size_t p = 0; p < parts.size(); ++p ) {
@@ -1448,6 +1475,12 @@ void vehicle::play_music()
         }
         const auto radio_pos = tripoint( global_pos() + parts[p].precalc[0], smz );
         iuse::play_music( &g->u, radio_pos, 15, 50 );
+
+        int distance = rl_dist( g->u.pos3(), global_pos3() );
+        if ( stereo_sfx_channel == -1 && distance <= 50 ){
+            stereo_sfx_channel = sfx::get_open_channel();
+        }
+        sfx::do_vehicle_stereo_sfx( global_pos3(), stereo_sfx_channel );
     }
 }
 
@@ -3107,7 +3140,7 @@ void vehicle::noise_and_smoke( double load, double time )
             double max_pwr = double(power_to_epower(part_power(p, true)))/40000;
             double cur_pwr = load * max_pwr;
 
-            if( is_engine_type(e, fuel_type_gasoline) || is_engine_type(e, fuel_type_diesel)) {
+            if( is_engine_type( e, fuel_type_gasoline) || is_engine_type(e, fuel_type_diesel)) {
                 const double dmg = 1.0 - ((double)parts[p].hp / part_info( p ).durability);
                 if( is_engine_type( e, fuel_type_gasoline ) && dmg > 0.75 &&
                         one_in( 200 - (150 * dmg) ) ) {
@@ -3145,6 +3178,11 @@ void vehicle::noise_and_smoke( double load, double time )
        }
     }
     sounds::ambient_sound( global_pos3(), noise, sound_msgs[lvl] );
+    int distance = rl_dist( g->u.pos3(), global_pos3() );
+    if ( exterior_engine_sfx_channel == -1 && distance <= 10 ){
+        exterior_engine_sfx_channel = sfx::get_open_channel();
+    }
+    sfx::do_vehicle_exterior_engine_sfx( global_pos3(), exterior_engine_sfx_channel );
 }
 
 float vehicle::wheels_area (int *const cnt) const
@@ -3637,7 +3675,7 @@ void vehicle::do_engine_damage(size_t e, int strain) {
      if( is_engine_on(e) && !is_engine_type(e, fuel_type_muscle) &&
          fuel_left(part_info(engines[e]).fuel_type) &&  rng (1, 100) < strain ) {
         int dmg = rng(strain * 2, strain * 4);
-        damage_direct(engines[e], dmg, 0);
+        damage_direct( engines[e], dmg );
         if(one_in(2)) {
             add_msg(_("Your engine emits a high pitched whine."));
         } else {
@@ -3671,6 +3709,7 @@ void vehicle::idle(bool on_map) {
             add_msg(_("The %s's engine dies!"), name.c_str());
         }
         engine_on = false;
+        sfx::do_vehicle_exterior_engine_sfx( global_pos3(), exterior_engine_sfx_channel );
     }
 
     if (stereo_on) {
@@ -3679,6 +3718,14 @@ void vehicle::idle(bool on_map) {
 
     if (on_map && is_alarm_on) {
         alarm();
+    }
+
+    if (on_map && fuel_left( fuel_type_battery )) {
+        int distance = rl_dist( g->u.pos3(), global_pos3() );
+        if ( door_sfx_channel == -1 && distance <= 10 ){
+            door_sfx_channel = sfx::get_open_channel();
+        }
+        sfx::do_door_alarm_sfx( global_pos3(), door_sfx_channel );
     }
 }
 
@@ -3743,7 +3790,7 @@ void vehicle::thrust (int thd) {
         skidding = false;
     }
 
-    if (stereo_on == true) {
+    if (stereo_on) {
         play_music();
     }
 
@@ -4198,10 +4245,12 @@ veh_collision vehicle::part_collision( int part, int x, int y, bool just_detect 
         if (pl_ctrl) {
             if (snd.length() > 0) {
                 //~ 1$s - vehicle name, 2$s - part name, 3$s - collision object name, 4$s - sound message
+                sfx::play_variant_sound( "smash_success", "hit_vehicle", sfx::get_heard_volume(g->u.pos3()) / 2, 0 );
                 add_msg (m_warning, _("Your %1$s's %2$s rams into a %3$s with a %4$s"),
                          name.c_str(), part_info(part).name.c_str(), obs_name.c_str(), snd.c_str());
             } else {
                 //~ 1$s - vehicle name, 2$s - part name, 3$s - collision object name
+                sfx::play_variant_sound( "smash_success", "hit_vehicle", sfx::get_heard_volume(g->u.pos3()) / 2, 0 );
                 add_msg (m_warning, _("Your %1$s's %2$s rams into a %3$s."),
                          name.c_str(), part_info(part).name.c_str(), obs_name.c_str());
             }
@@ -4257,7 +4306,7 @@ veh_collision vehicle::part_collision( int part, int x, int y, bool just_detect 
         }
     }
 
-    damage( parm, part_dmg, 1 );
+    damage( parm, part_dmg, DT_BASH );
 
     veh_collision ret;
     ret.part = part;
@@ -4732,7 +4781,10 @@ void vehicle::remove_remote_part(int part_num) {
 }
 
 void vehicle::shed_loose_parts() {
-    for( auto &elem : loose_parts ) {
+    // remove_part rebuilds the loose_parts vector, when all of those parts have been removed,
+    // it will stay empty.
+    while( !loose_parts.empty() ) {
+        int const elem = loose_parts.front();
         if( part_flag( elem, "POWER_TRANSFER" ) ) {
             remove_remote_part( elem );
         }
@@ -4744,7 +4796,6 @@ void vehicle::shed_loose_parts() {
 
         remove_part( elem );
     }
-    loose_parts.clear();
 }
 
 void vehicle::refresh_insides ()
@@ -4815,7 +4866,7 @@ void vehicle::unboard_all ()
     }
 }
 
-int vehicle::damage( int p, int dmg, int type, bool aimed )
+int vehicle::damage( int p, int dmg, damage_type type, bool aimed )
 {
     if( dmg < 1 ) {
         return dmg;
@@ -4869,7 +4920,7 @@ int vehicle::damage( int p, int dmg, int type, bool aimed )
     return dres;
 }
 
-void vehicle::damage_all( int dmg1, int dmg2, int type, const point &impact )
+void vehicle::damage_all( int dmg1, int dmg2, damage_type type, const point &impact )
 {
     if( dmg2 < dmg1 ) {
         std::swap( dmg1, dmg2 );
@@ -4946,7 +4997,7 @@ bool vehicle::shift_if_needed() {
     return false;
 }
 
-int vehicle::damage_direct (int p, int dmg, int type)
+int vehicle::damage_direct( int p, int dmg, damage_type type )
 {
     if (parts[p].hp <= 0) {
         /* Already-destroyed part - chance it could be torn off into pieces.
@@ -5010,26 +5061,38 @@ int vehicle::damage_direct (int p, int dmg, int type)
         tsh = 20;
     }
     int dres = dmg;
-    if (dmg >= tsh || type != 1)
+    if( dmg >= tsh || type == DT_HEAT || type == DT_TRUE )
     {
         dres -= parts[p].hp;
         int last_hp = parts[p].hp;
         parts[p].hp -= dmg;
-        if (parts[p].hp < 0)
+        if( parts[p].hp < 0 ) {
             parts[p].hp = 0;
-        if (!parts[p].hp && last_hp > 0)
+        }
+
+        if( parts[p].hp == 0 && last_hp > 0) {
             insides_dirty = true;
-        if (part_flag(p, "FUEL_TANK"))
+        }
+
+        if( part_flag( p, "FUEL_TANK" ) )
         {
             const itype_id &ft = part_info(p).fuel_type;
-            if (ft == fuel_type_gasoline  || ft == fuel_type_diesel || ft == fuel_type_plasma)
+            if( ft == fuel_type_gasoline || ft == fuel_type_diesel || ft == fuel_type_plasma )
             {
-                int pow = parts[p].amount / 40;
-    //            debugmsg ("damage check dmg=%d pow=%d", dmg, pow);
-                if (parts[p].hp <= 0)
-                    leak_fuel (p);
-                if (type == 2 ||
-                    (one_in ((ft == fuel_type_gasoline || ft == fuel_type_diesel) ? 2 : 4) && pow > 5 && rng (75, 150) < dmg))
+                // TODO: Move all the bools below to jsons
+                // Gasoline explodes way more readily than diesel
+                const bool bad_explosion = ft == fuel_type_gasoline;
+                // one_in chance of exploding
+                const bool explosion_chance = ft == fuel_type_diesel ? 10 : 2;
+                const bool fiery_explosion = ft == fuel_type_gasoline || ft == fuel_type_diesel;
+                const int pow = std::pow( parts[p].amount, bad_explosion ? 0.45f : 0.4f );
+                //debugmsg( "damage check dmg=%d pow=%d amount=%d", dmg, pow, parts[p].amount );
+                if( parts[p].hp <= 0 ) {
+                    leak_fuel( p );
+                }
+
+                if( pow > 5 &&
+                    ( type == DT_HEAT || (one_in( explosion_chance )  && rng( 75, 150 ) < dmg) ) )
                 {
                     g->u.add_memorial_log(pgettext("memorial_male","The fuel tank of the %s exploded!"),
                         pgettext("memorial_female", "The fuel tank of the %s exploded!"),
@@ -5037,8 +5100,9 @@ int vehicle::damage_direct (int p, int dmg, int type)
                     g->explosion( tripoint( global_x() + parts[p].precalc[0].x,
                                             global_y() + parts[p].precalc[0].y,
                                             smz ),
-                                  pow, 0, (ft == fuel_type_gasoline || ft == fuel_type_diesel));
+                                  pow, 0, fiery_explosion );
                     parts[p].hp = 0;
+                    parts[p].amount = 0;
                 }
             }
         }

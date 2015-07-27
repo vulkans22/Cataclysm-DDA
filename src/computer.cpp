@@ -109,6 +109,12 @@ void computer::use()
     // Login
     print_line(_("Logging into %s..."), name.c_str());
     if (security > 0) {
+        if (int(calendar::turn) < next_attempt) {
+            print_error( _("Access is temporary blocked for security purposes.") );
+            query_any(_("Please contact the system administrator."));
+            reset_terminal();
+            return;
+        }
         print_error(_("ERROR!  Access denied!"));
         switch (query_ynq(_("Bypass security?"))) {
         case 'q':
@@ -204,7 +210,6 @@ bool computer::hack_attempt(player *p, int Security)
     }
 
     p->moves -= 10 * (5 + Security * 2) / std::max( 1, hack_skill + 1 );
-    p->practice( "computer", 5 + Security * 2 );
     int player_roll = hack_skill;
     if (p->int_cur < 8 && one_in(2)) {
         player_roll -= rng(0, 8 - p->int_cur);
@@ -212,7 +217,9 @@ bool computer::hack_attempt(player *p, int Security)
         player_roll += rng(0, p->int_cur - 8);
     }
 
-    return (dice(player_roll, 6) >= dice(Security, 6));
+    bool successful_attempt = (dice(player_roll, 6) >= dice(Security, 6));
+    p->practice( "computer", (successful_attempt ? (15 + Security * 3) : 7));
+    return successful_attempt;
 }
 
 std::string computer::save_data()
@@ -502,7 +509,7 @@ void computer::activate_function(computer_action action, char ch)
         }
         if(query_yn(_("Confirm nuclear missile launch."))) {
             add_msg(m_info, _("Nuclear missile launched!"));
-            options.clear();//Remove the option to fire another missle.
+            options.clear();//Remove the option to fire another missile.
         } else {
             add_msg(m_info, _("Nuclear missile launch aborted."));
             return;
@@ -720,7 +727,7 @@ INITIATING STANDARD TREMOR TEST..."));
         }
         // Disable this action to prevent further amigara events, which would lead to
         // further amigara monster, which would lead to further artifacts.
-        remove_option( COMPACT_AMIGARA_START );
+        //remove_option( COMPACT_AMIGARA_START );
         break;
 
     case COMPACT_STEMCELL_TREATMENT:
@@ -1077,7 +1084,7 @@ It takes you forever to find the address on your map...\n"));
   safe procedures and rig the sarcophagus with C-4 as outlined\n\
   in Publication 4423.  We will send you orders to either detonate\n\
   and seal the sarcophagus or remove the charges.  It is of the\n\
-  utmost importance that the facility be sealed immediatly when\n\
+  utmost importance that the facility be sealed immediately when\n\
   the orders are given.  We have been alerted by Homeland Security\n\
   that there are potential terrorist suspects that are being\n\
   detained in connection with the recent national crisis.\n\
@@ -1166,6 +1173,7 @@ It takes you forever to find the address on your map...\n"));
 
 void computer::activate_random_failure()
 {
+    next_attempt = int(calendar::turn) + 450;
     computer_failure fail = (failures.empty() ? COMPFAIL_SHUTDOWN :
                              failures[rng(0, failures.size() - 1)]);
     activate_failure(fail);
@@ -1310,7 +1318,7 @@ void computer::activate_failure(computer_failure fail)
         g->u.add_effect("amigara", 20);
         g->explosion( tripoint( rng(0, SEEX * MAPSIZE), rng(0, SEEY * MAPSIZE), g->get_levz() ), 10, 10, false );
         g->explosion( tripoint( rng(0, SEEX * MAPSIZE), rng(0, SEEY * MAPSIZE), g->get_levz() ), 10, 10, false );
-        remove_option( COMPACT_AMIGARA_START );
+        //remove_option( COMPACT_AMIGARA_START );
         break;
 
     case COMPFAIL_DESTROY_BLOOD:

@@ -9,15 +9,17 @@
 #include "SDL2/SDL.h"
 #include "SDL2/SDL_ttf.h"
 
-#include "game.h"
+#include "animation.h"
 #include "map.h"
-#include "mapdata.h"
+#include "weather.h"
 #include "tile_id_data.h"
 #include "enums.h"
 
+#include <list>
 #include <map>
 #include <vector>
 #include <string>
+#include <unordered_map>
 
 class JsonObject;
 struct visibility_variables;
@@ -236,6 +238,10 @@ class cata_tiles
         void draw_explosion_frame();
         void void_explosion();
 
+        void init_custom_explosion_layer( const std::map<point, explosion_tile> &layer );
+        void draw_custom_explosion_frame();
+        void void_custom_explosion();
+
         void init_draw_bullet( const tripoint &p, std::string name );
         void draw_bullet_frame();
         void void_bullet();
@@ -260,7 +266,7 @@ class cata_tiles
         void draw_sct_frame();
         void void_sct();
 
-        void init_draw_zones(const point &p_pointStart, const point &p_pointEnd, const point &p_pointOffset);
+        void init_draw_zones( const tripoint &start, const tripoint &end, const tripoint &offset );
         void draw_zones_frame();
         void void_zones();
 
@@ -303,6 +309,7 @@ class cata_tiles
         bool in_animation;
 
         bool do_draw_explosion;
+        bool do_draw_custom_explosion;
         bool do_draw_bullet;
         bool do_draw_hit;
         bool do_draw_line;
@@ -311,6 +318,8 @@ class cata_tiles
         bool do_draw_zones;
 
         int exp_pos_x, exp_pos_y, exp_rad;
+
+        std::map<point, explosion_tile> custom_explosion_layer;
 
         int bul_pos_x, bul_pos_y;
         std::string bul_id;
@@ -326,9 +335,9 @@ class cata_tiles
         weather_printable anim_weather;
         std::string weather_name;
 
-        point pStartZone;
-        point pEndZone;
-        point pZoneOffset;
+        tripoint zone_start;
+        tripoint zone_end;
+        tripoint zone_offset;
 
         // offset values, in tile coordinates, not pixels
         int o_x, o_y;

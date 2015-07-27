@@ -388,6 +388,19 @@ item& Character::i_add(item it)
     return item_in_inv;
 }
 
+std::list<item> Character::remove_worn_items_with( std::function<bool(item &)> filter )
+{
+    std::list<item> result;
+    for( auto iter = worn.begin(); iter != worn.end(); ) {
+        if( filter( *iter ) ) {
+            result.splice( result.begin(), worn, iter++ );
+        } else {
+            ++iter;
+        }
+    }
+    return result;
+}
+
 item Character::i_rem(int pos)
 {
  item tmp;
@@ -396,8 +409,10 @@ item Character::i_rem(int pos)
      weapon = ret_null;
      return tmp;
  } else if (pos < -1 && pos > worn_position_to_index(worn.size())) {
-     tmp = worn[worn_position_to_index(pos)];
-     worn.erase(worn.begin() + worn_position_to_index(pos));
+     auto iter = worn.begin();
+     std::advance( iter, worn_position_to_index( pos ) );
+     tmp = *iter;
+     worn.erase( iter );
      return tmp;
  }
  return inv.remove_item(pos);
@@ -431,7 +446,7 @@ bool Character::i_add_or_drop(item& it, int qty) {
         }
         if (drop) {
             retval &= g->m.add_item_or_charges(posx(), posy(), it);
-        } else {
+        } else if ( !( it.has_flag("IRREMOVEABLE") && !it.is_gun() ) ){
             i_add(it);
         }
     }
@@ -682,8 +697,6 @@ void Character::die(Creature* nkiller)
 
 void Character::reset_stats()
 {
-    Creature::reset_stats();
-
     // Bionic buffs
     if (has_active_bionic("bio_hydraulics"))
         mod_str_bonus(20);
@@ -750,6 +763,9 @@ void Character::reset_stats()
     else if (str_max <= 5) {mod_dodge_bonus(1);} // Bonus if we're small
 
     nv_cached = false;
+
+    // Has to be at the end because it applies the bonuses
+    Creature::reset_stats();
 }
 
 bool Character::has_nv()
